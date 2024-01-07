@@ -29,6 +29,8 @@ vim.keymap.set("n", "<C-n>", ":bn<CR>", { silent = true })
 vim.keymap.set("n", "<C-p>", ":bp<CR>", { silent = true })
 vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR>", { silent = true })
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-N>", { noremap = true, silent = true })
+vim.api.nvim_create_user_command("ConfigInit", ":e ~/.config/nvim/init.lua", {})
+vim.api.nvim_create_user_command("ConfigPlugins", ":e ~/.config/nvim/lua/plugins.lua", {})
 -- lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
