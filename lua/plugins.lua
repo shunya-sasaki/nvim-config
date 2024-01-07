@@ -1,21 +1,21 @@
 return {
     -- colorscheme ============================================================
     -- monokai ----------------------------------------------------------------
-    -- {
-    --     "tanvirtin/monokai.nvim",
-    --     lazy = false,
-    --     config = function()
-    --         vim.cmd([[colorscheme monokai]])
-    --     end
-    -- },
+    {
+        "tanvirtin/monokai.nvim",
+        lazy = false,
+        -- config = function()
+        --     vim.cmd([[colorscheme monokai]])
+        -- end
+    },
     -- tokyonight -------------------------------------------------------------
-    -- {
-    --     'folke/tokyonight.nvim',
-    --     lazy = false,
-    --     config = function()
-    --         vim.cmd([[colorscheme tokyonight-storm]])
-    --     end
-    -- },
+    {
+        'folke/tokyonight.nvim',
+        lazy = false,
+        -- config = function()
+        --     vim.cmd([[colorscheme tokyonight-storm]])
+        -- end
+    },
     -- catppuccin -------------------------------------------------------------
     {
         "catppuccin/nvim",
