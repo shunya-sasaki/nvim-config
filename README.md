@@ -12,6 +12,7 @@ Configuration files for Neovim.
 ### Optional
 
 - [PlemolJP](https://github.com/yuru7/PlemolJP) (Use Nerd Font synthetic edition)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## Plugins
 
@@ -72,7 +73,7 @@ is installed and it installs the extensions.
 | Normal   | \<C-n\>               | Go to next buffer                      | -                |
 | Normal   | \<C-p\>               | Go to previous buffer                  | -                |
 | Normal   | \<Esc\>\<Esc\>        | Stop the hilighting for the `hlsearch` | -                |
-| Terminal | \<Esc\>               | Return to Normal mode                  | -                |
+| Terminal | \<Esc\>\<Esc\>        | Return to Normal mode                  | -                |
 | Normal   | \<Leader\>ff          | Find files                             | telescope.nvim   |
 | Normal   | \<Leader\>fg          | Live grep                              | telescope.nvim   |
 | Normal   | \<Leader\>fb          | Buffers                                | telescope.nvim   |
