@@ -158,6 +158,7 @@ return {
                 "coc-rust-analyzer",
                 "coc-pyright",
                 "coc-tsserver",
+                "coc-css",
                 "coc-eslint",
                 "coc-prettier",
                 "coc-lua", }
@@ -201,6 +202,7 @@ return {
         end
     },
     { 'neoclide/coc-eslint' },
+    { 'neoclide/coc-css' },
     -- Lua
     { 'josa42/coc-lua' },
     -- fern -------------------------------------------------------------------
@@ -235,6 +237,7 @@ return {
         config = function()
             require('lualine').setup(
                 {
+                    globalstatus = true,
                     options = { theme = "onedark" },
                     tabline = {
                         lualine_a = {
