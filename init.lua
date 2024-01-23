@@ -1,4 +1,5 @@
 -- luacheck: globals vim
+local os_name = require("util").get_os_name()
 -- system setting
 vim.opt.number = true
 vim.opt.cursorline = true
@@ -8,7 +9,22 @@ vim.opt.fileencodings = "utf-8,iso-2022-jp,ucs-bom,default"
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.clipboard = "unnamedplus"
+if os_name == "wsl" then
+    vim.g.clipboard = {
+        name = 'myClipboard',
+        copy = {
+            ['+'] = 'win32yank.exe -i',
+            ['*'] = 'win32yank.exe -i',
+        },
+        paste = {
+            ['+'] = 'win32yank.exe -o',
+            ['*'] = 'win32yank.exe -o',
+        },
+        cache_enabled = 1,
+    }
+else
+    vim.opt.clipboard = "unnamedplus"
+end
 vim.opt.smartindent = true
 vim.opt.matchtime = 1
 vim.opt.ignorecase = true
