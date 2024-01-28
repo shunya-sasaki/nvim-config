@@ -2,6 +2,7 @@
 local script_path = debug.getinfo(1).source:match("@?(.*/)")
 package.path = package.path .. ';' .. script_path .. '?.lua'
 local os_name = require("util").get_os_name()
+local with_nf = true
 -- system setting
 vim.opt.number = true
 vim.opt.cursorline = true
@@ -62,7 +63,17 @@ if not vim.loop.fs_stat(lazypath) then
     })
 end
 vim.opt.rtp:prepend(lazypath)
-require("lazy").setup({
-    { import = "plugins" },
-    { import = "plugins.extra" }
-})
+if with_nf then
+    require("lazy").setup({
+        { import = "plugins" },
+        { import = "plugins.extra" },
+        { import = "plugins.with_nf" },
+    })
+else
+    require("lazy").setup({
+        { import = "plugins" },
+        { import = "plugins.extra" },
+        { import = "plugins.without_nf" },
+
+    })
+end
