@@ -11,29 +11,35 @@ return {
     },
     -- statusline --------------------------------------------------------
     {
-        'vim-airline/vim-airline',
+        'nvim-lualine/lualine.nvim',
         config = function()
-            vim.g.airline_theme = "term"
-            vim.g['airline#extensions#tabline#enabled'] = 1
-            vim.g['airline#extensions#tabline#formatter'] = 'default'
-            vim.g['airline#extensions#virtualenv#enabled'] = 1
+            require('lualine').setup(
+                {
+                    globalstatus = true,
+                    icons_enabled = false,
+                    options = { theme = "onedark",
+                    component_separators = { left = '»', right = '«'},
+                    section_separators = { left = '»', right = '«'},
+                    },
+                    tabline = {
+                        lualine_a = {
+                            {
+                                'buffers',
+                                mode = 4,
+                                icons_enabled = true,
+                                show_filename_only = true,
+                                hide_filename_extensions = false
+                            }
+                        },
+                        lualine_b = {},
+                        lualine_c = {},
+                        lualine_x = {},
+                        lualine_y = {},
+                        lualine_z = { 'tabs' }
+                    },
 
-            if vim.g.airline_symbols == nil then
-                vim.g.airline_symbols = {}
-            end
-            vim.g.airline_left_sep = '»'
-            vim.g.airline_right_sep = '«'
-            vim.g.airline_symbols.colnr = ' ㏇:'
-            vim.g.airline_symbols.colnr = ' ℅:'
-            vim.g.airline_symbols.crypt = '🔒'
-            vim.g.airline_symbols.linenr = '☰'
-            vim.g.airline_symbols.maxlinenr = ''
-            vim.g.airline_symbols.branch = '⎇'
-            vim.g.airline_symbols.paste = 'ρ'
-            vim.g.airline_symbols.paste = '∥'
-            vim.g.airline_symbols.spell = 'Ꞩ'
-            vim.g.airline_symbols.notexists = '∄'
+                }
+            )
         end
     },
-    { 'vim-airline/vim-airline-themes' }
 }
