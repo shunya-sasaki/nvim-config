@@ -52,6 +52,10 @@ return {
     },
     -- Rust
     { 'fannheyward/coc-rust-analyzer' },
+    -- HTML/CSS
+    {'neoclide/coc-html'},
+    {'yaegassy/coc-htmlhint'},
+    { 'neoclide/coc-css' },
     -- TypeScript / JavaScript
     { 'neoclide/coc-tsserver' },
     {
@@ -65,7 +69,7 @@ return {
         end
     },
     { 'neoclide/coc-eslint' },
-    { 'neoclide/coc-css' },
+    { 'yaegassy/coc-tailwindcss3' },
     -- Lua
     { 'josa42/coc-lua' },
 }
