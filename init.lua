@@ -30,6 +30,7 @@ else
     vim.opt.clipboard = "unnamedplus"
 end
 vim.opt.smartindent = true
+vim.opt.wrap = false
 vim.opt.matchtime = 1
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -38,6 +39,7 @@ vim.opt.hlsearch = true
 vim.opt.pumheight = 10
 vim.opt.laststatus = 3
 vim.opt.completeopt = "menuone,noinsert"
+vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.termguicolors = true
@@ -51,6 +53,10 @@ vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR>", { silent = true })
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-N>", { noremap = true, silent = true })
 vim.api.nvim_create_user_command("ConfigInit", ":e ~/.config/nvim/init.lua", {})
 vim.api.nvim_create_user_command("ConfigPlugins", ":e ~/.config/nvim/lua/plugins.lua", {})
+
+-- python
+vim.g.python3_host_prog = "~/.venv/nvim/bin/python3"
+
 -- lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
