@@ -16,10 +16,11 @@ return {
             require('lualine').setup(
                 {
                     globalstatus = true,
-                    icons_enabled = false,
-                    options = { theme = "onedark",
-                    component_separators = { left = '»', right = '«'},
-                    section_separators = { left = '»', right = '«'},
+                    options = {
+                        theme = "onedark",
+                        icons_enabled = false,
+                        component_separators = { left = '»', right = '«' },
+                        section_separators = { left = '»', right = '«' },
                     },
                     tabline = {
                         lualine_a = {
