@@ -21,6 +21,7 @@ return {
                 "coc-pyright",
                 "coc-tsserver",
                 "coc-css",
+                "@yaegassy/coc-tailwindcss3",
                 "coc-eslint",
                 "coc-prettier",
                 "coc-lua", }

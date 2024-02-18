@@ -1,6 +1,7 @@
 {
   "suggest.noselect": true,
   "Lua.diagnostics.globals": ["vim", "ops"],
+  "prettier.tabWidth": 2,
   "python.formatting.provider": "black",
   "python.linting.flake8Enabled": true,
   "pyright.organizeimports.provider": "isort",
