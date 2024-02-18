@@ -12,9 +12,9 @@ return {
     {
         'folke/tokyonight.nvim',
         lazy = false,
-        -- config = function()
-        --     vim.cmd([[colorscheme tokyonight-storm]])
-        -- end
+        config = function()
+            vim.cmd([[colorscheme tokyonight-storm]])
+        end
     },
     -- catppuccin -------------------------------------------------------------
     {
@@ -28,8 +28,8 @@ return {
     -- nightfox ---------------------------------------------------------------
     {
         "EdenEast/nightfox.nvim",
-        config = function()
-            vim.cmd([[colorscheme nightfox]])
-        end
+        -- config = function()
+        --     vim.cmd([[colorscheme nightfox]])
+        -- end
     },
 }
