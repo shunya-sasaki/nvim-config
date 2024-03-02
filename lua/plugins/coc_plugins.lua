@@ -15,6 +15,7 @@ return {
                 { silent = true, noremap = true })
             vim.g.coc_global_extensions = {
                 "coc-snippets",
+                "coc-powershell",
                 "coc-markdownlint",
                 "coc-toml",
                 "coc-rust-analyzer",
@@ -34,6 +35,8 @@ return {
                 { noremap = false, silent = true })
         end
     },
+    -- PowerShell
+    {'coc-extensions/coc-powershell'},
     -- Markdown
     { 'fannheyward/coc-markdownlint' },
     -- Toml

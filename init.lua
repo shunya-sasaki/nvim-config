@@ -56,6 +56,10 @@ vim.api.nvim_create_user_command("ConfigPlugins", ":e ~/.config/nvim/lua/plugins
 
 -- python
 vim.g.python3_host_prog = "~/.venv/nvim/bin/python3"
+-- ruby
+vim.g.loaded_ruby_provider = 0
+-- perl
+vim.g.loaded_perl_provider = 0
 
 -- lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"

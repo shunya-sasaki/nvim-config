@@ -14,7 +14,7 @@ local function get_os_name()
         elseif uname == "Darwin" then
             return "macos"
         else
-            return "unknown"
+            return "windows"
         end
     end
 end
