@@ -9,5 +9,6 @@
   "markdownlint.config": {
       "default": true,
       "line_length": false
-  }
+  },
+  "powershell.integratedConsole.showOnStartup": false
 }
