@@ -26,7 +26,7 @@ return {
                 if extA > extB then
                     return 1
                 elseif extA < extB then
-                    return 0
+                    return -1
                 else
                     return 0
                 end
@@ -43,13 +43,17 @@ return {
                     return 1
                 else
                     local extension_compare_result = compareExtensions(name1, name2)
-                    if extension_compare_result ~= 0  then
+                    if extension_compare_result ~= 0 then
                         return extension_compare_result
                     else
-                        if name1 > name2 then
-                            return 1
-                        elseif name1 < name2 then
+                        if (name1:sub(1, 1) == "." and name2:sub(1, 1) ~= ".") then
                             return -1
+                        elseif (name1:sub(1, 1) ~= "." and name2:sub(1, 1) == ".") then
+                            return 1
+                        elseif name1 > name2 then
+                            return -1
+                        elseif name1 < name2 then
+                            return 1
                         else
                             return 0
                         end
