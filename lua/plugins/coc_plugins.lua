@@ -18,6 +18,7 @@ return {
                 "coc-powershell",
                 "coc-markdownlint",
                 "coc-toml",
+                "coc-clangd",
                 "coc-rust-analyzer",
                 "coc-pyright",
                 "coc-tsserver",
@@ -54,6 +55,8 @@ return {
             })
         end
     },
+    -- C/C++
+    {'clangd/coc-clangd'},
     -- Rust
     { 'fannheyward/coc-rust-analyzer' },
     -- HTML/CSS
