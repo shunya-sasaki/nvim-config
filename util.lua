@@ -1,21 +1,20 @@
 local function get_os_name()
-    local wsl = os.getenv("WSLENV")
-    if wsl then
-        return "wsl"
-    else
-        local handle = io.popen("uname")
-        local uname = nil
-        if handle then
-            uname = handle:read("*a"):gsub("^%s*(.-)%s*$", "%1")
-        end
-
-        if uname == "Linux" then
-            return "linux"
-        elseif uname == "Darwin" then
-            return "macos"
-        else
-            return "windows"
-        end
+    if vim.fn.has('macos') == 1 then
+        return 'macos'
+    elseif vim.fn.has('linux') == 1 then
+        return 'linux'
+    elseif vim.fn.has('unix') == 1 then
+        return 'unix'
+    elseif vim.fn.has('sun') == 1 then
+        return 'sun'
+    elseif vim.fn.has('bsd') == 1 then
+        return 'bsd'
+    elseif vim.fn.has('win32') == 1 then
+        return 'win32'
+    elseif vim.fn.has('win64') == 1 then
+        return 'win64'
+    elseif vim.fn.has('wsl') == 1 then
+        return 'wsl'
     end
 end
 

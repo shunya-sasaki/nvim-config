@@ -1,7 +1,7 @@
 -- luacheck: globals vim
 local script_path = debug.getinfo(1).source:match("@?(.*/)")
 package.path = package.path .. ';' .. script_path .. '?.lua'
-local os_name = require("util").get_os_name()
+local os_name = require('util').get_os_name()
 local with_nf = true
 -- system setting
 vim.opt.number = true
@@ -55,7 +55,11 @@ vim.api.nvim_create_user_command("ConfigInit", ":e ~/.config/nvim/init.lua", {})
 vim.api.nvim_create_user_command("ConfigPlugins", ":e ~/.config/nvim/lua/plugins.lua", {})
 
 -- python
-vim.g.python3_host_prog = "~/.venv/nvim/bin/python3"
+if(os_name == "win32" or os_name == "win64") then
+    vim.g.python3_host_prog = "~/.venv/nvim/Scripts/python.exe"
+else
+    vim.g.python3_host_prog = "~/.venv/nvim/bin/python3"
+end
 -- ruby
 vim.g.loaded_ruby_provider = 0
 -- perl
