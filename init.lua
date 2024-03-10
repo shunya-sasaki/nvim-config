@@ -1,8 +1,18 @@
 -- luacheck: globals vim
-local script_path = debug.getinfo(1).source:match("@?(.*/)")
-package.path = package.path .. ';' .. script_path .. '?.lua'
-local os_name = require('util').get_os_name()
-local with_nf = true
+-- user config
+Config = {
+    with_nf = true,
+}
+-- check os
+if vim.fn.has("win32") == 1 then
+    Config.os_name = "win32"
+elseif vim.fn.has("win64") == 1 then
+    Config.os_name = "win64"
+else
+    local script_path = debug.getinfo(1).source:match("@?(.*/)")
+    package.path = package.path .. ';' .. script_path .. '?.lua'
+    Config.os_name = require('util').get_os_name()
+end
 -- system setting
 vim.opt.number = true
 vim.opt.cursorline = true
@@ -12,7 +22,7 @@ vim.opt.fileencodings = "utf-8,iso-2022-jp,ucs-bom,default"
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-if os_name == "wsl" then
+if Config.os_name == "wsl" then
     vim.opt.clipboard = "unnamedplus"
     vim.g.clipboard = {
         name = 'myClipboard',
@@ -55,7 +65,7 @@ vim.api.nvim_create_user_command("ConfigInit", ":e ~/.config/nvim/init.lua", {})
 vim.api.nvim_create_user_command("ConfigPlugins", ":e ~/.config/nvim/lua/plugins.lua", {})
 
 -- python
-if(os_name == "win32" or os_name == "win64") then
+if (Config.os_name == "win32" or Config.os_name == "win64") then
     vim.g.python3_host_prog = "~/.venv/nvim/Scripts/python.exe"
 else
     vim.g.python3_host_prog = "~/.venv/nvim/bin/python3"
@@ -78,17 +88,7 @@ if not vim.loop.fs_stat(lazypath) then
     })
 end
 vim.opt.rtp:prepend(lazypath)
-if with_nf then
-    require("lazy").setup({
-        { import = "plugins" },
-        { import = "plugins.extra" },
-        { import = "plugins.with_nf" },
-    })
-else
-    require("lazy").setup({
-        { import = "plugins" },
-        { import = "plugins.extra" },
-        { import = "plugins.without_nf" },
-
-    })
-end
+require("lazy").setup({
+    { import = "plugins" },
+    { import = "plugins.extra" },
+})
