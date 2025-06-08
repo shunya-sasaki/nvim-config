@@ -1,26 +1,5 @@
 return {
 	{
-	"L3MON4D3/LuaSnip",
-	version = "2.*",
-	build   = "make install_jsregexp",
-	config = function()
-		local vscode_snippets_path = nil
-		local luasnip = require("luasnip")
-		if Config.os_name == "win32" or Config.os_name == "win64" then
-			vscode_snippets_path = vim.fn.expand("~\\AppData\\Roaming\\Code\\User\\snippets")
-		elseif Config.os_name == "mac" then
-			vscode_snippets_path = vim.fn.expand(os.getenv("HOME") .. "/Library/Application Support/Code/User/snippets")
-		else
-			vscode_snippets_path = vim.fn.expand("~/.config/Code/User/snippets")
-		end
-		require("luasnip.loaders.from_vscode").lazy_load({
-			paths = { vscode_snippets_path,
-				vim.fn.stdpath("config") .. "/snippets"
-			},
-		})
-		end
-	},
-	{
 		"hrsh7th/nvim-cmp",
 		lazy = false,
 		dependencies = {
@@ -31,12 +10,30 @@ return {
 			"hrsh7th/cmp-cmdline",
 			"saadparwaiz1/cmp_luasnip",
 			"petertriho/cmp-git",
+			{
+			"L3MON4D3/LuaSnip",
+			version = "2.*",
+			build   = "make install_jsregexp",
+			lazy = false,
+			opts = {
+				history = true,
+				delete_check_events = "TextChanged", -- tidy up removed snippet text  [oai_citation:2‡github.com](https://github.com/L3MON4D3/LuaSnip?utm_source=chatgpt.com)
+				},
+			config = function(_, opts)
+				local luasnip = require("luasnip")
+				local vscode_snippets_path = {
+					vim.fn.expand(vim.fn.stdpath("config") .. "/snippets"),
+				}
+				luasnip.setup(opts)
+				require('luasnip.loaders.from_vscode').load({
+					paths = vscode_snippets_path
+				})
+				end
+			},
 		},
 		config = function()
 			local cmp = require("cmp")
-			-- Debug
-			print("snips:", vim.inspect(require("luasnip").snippets))
-
+			local luasnip = require("luasnip")
 			cmp.setup({
 				snippet = {
 					expand = function(args)
