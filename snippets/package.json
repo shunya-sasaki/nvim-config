@@ -5,6 +5,22 @@
       {
         "language": "toml",
         "path": "./pyproject.code-snippets"
+      },
+      {
+          "language": "ignore",
+          "path": "./.gitignore.code-snippets"
+      },
+      {
+          "language": "markdown",
+          "path": "./.readme.code-snippets"
+      },
+      {
+          "language": "markdown",
+          "path": "./.mermaid.code-snippets"
+      },
+      {
+          "language": "plaintext",
+          "path": "./mit.code-snippets"
       }
     ]
   }
