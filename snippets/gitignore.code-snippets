@@ -1,7 +1,7 @@
 {
 	".gitignore": {
 		"prefix": ".gitignore",
-		"scope": "ignore",
+		"scope": "gitignore",
 		"description": "Template for .gitignore",
 		"body": [
 			"**/node_modules",
