@@ -9,32 +9,37 @@ return {
 	},
 	{
 		"olimorris/codecompanion.nvim",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"nvim-treesitter/nvim-treesitter",
+		},
+		init = function()
+			vim.keymap.set("n", "<Leader>cc", "<cmd>CodeCompanionChat Toggle<CR>", { noremap = true, silent = true })
+		end,
 		opts = {
 			adapters = {
 				llama3 = function()
-					return require("codecompanion.adapters").extend("ollama"),
-						{
-							name = "llama3.2",
-							schema = {
-								model = {
-									default = "llama3.2:latest",
-								},
+					return require("codecompanion.adapters").extend("ollama", {
+						name = "llama3.2",
+						schema = {
+							model = {
+								default = "llama3.2:latest",
 							},
-						}
+						},
+					})
 				end,
 				azure_openai = function()
-					return require("codecompanion.adapters").extend("azure_openai"),
-						{
-							env = {
-								api_key = os.getenv("AZURE_OPENAI_API_KEY"),
-								api_base = os.getenv("AZURE_OPENAI_ENDPOINT"),
+					return require("codecompanion.adapters").extend("azure_openai", {
+						env = {
+							api_key = os.getenv("AZURE_OPENAI_API_KEY"),
+							api_base = os.getenv("AZURE_OPENAI_ENDPOINT"),
+						},
+						schema = {
+							model = {
+								default = os.getenv("AZURE_OPENAI_MODEL"),
 							},
-							schema = {
-								model = {
-									default = os.getenv("AZURE_OPENAI_MODEL"),
-								},
-							},
-						}
+						},
+					})
 				end,
 			},
 			strategies = {
@@ -57,10 +62,6 @@ return {
 					},
 				},
 			},
-		},
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-treesitter/nvim-treesitter",
 		},
 	},
 }
