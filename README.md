@@ -54,6 +54,23 @@ After clone the project files, run `nvim`.
 At the startup of the nvim, `lazy.nvim`, which is a plugin manager,
 is installed and it installs the extensions.
 
+### Set nvim as default editor for git
+
+Run the following command to set Neovim as the default editor for git.
+
+```shell
+git config --global core.editor "nvim"
+```
+
+### Set enable to add diff in git commit
+
+Run the following command to enable to add diff in git commit.
+This helps the copilot to create a commit message.
+
+```shell
+git config --global commit.verbose true
+```
+
 ## Shortcut keys and commands
 
 | Mode     | Key and command       | Description                            | Plugin           |
