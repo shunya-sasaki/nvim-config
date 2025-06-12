@@ -53,9 +53,9 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.termguicolors = true
-vim.opt.updatetime = 300
+vim.opt.updatetime = 500
 vim.opt.ttimeoutlen = 10
-vim.opt.timeoutlen = 300
+vim.opt.timeoutlen = 500
 
 -- keymap
 vim.g.mapleader = " "

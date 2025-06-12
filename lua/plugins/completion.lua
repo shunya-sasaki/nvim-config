@@ -11,24 +11,24 @@ return {
 			"saadparwaiz1/cmp_luasnip",
 			"petertriho/cmp-git",
 			{
-			"L3MON4D3/LuaSnip",
-			version = "2.*",
-			build   = "make install_jsregexp",
-			lazy = false,
-			opts = {
-				history = true,
-				delete_check_events = "TextChanged", -- tidy up removed snippet text  [oai_citation:2‡github.com](https://github.com/L3MON4D3/LuaSnip?utm_source=chatgpt.com)
+				"L3MON4D3/LuaSnip",
+				version = "2.*",
+				build = "make install_jsregexp",
+				lazy = false,
+				opts = {
+					history = true,
+					delete_check_events = "TextChanged", -- tidy up removed snippet text  [oai_citation:2‡github.com](https://github.com/L3MON4D3/LuaSnip?utm_source=chatgpt.com)
 				},
-			config = function(_, opts)
-				local luasnip = require("luasnip")
-				local vscode_snippets_path = {
-					vim.fn.expand(vim.fn.stdpath("config") .. "/snippets"),
-				}
-				luasnip.setup(opts)
-				require('luasnip.loaders.from_vscode').load({
-					paths = vscode_snippets_path
-				})
-				end
+				config = function(_, opts)
+					local luasnip = require("luasnip")
+					local vscode_snippets_path = {
+						vim.fn.expand(vim.fn.stdpath("config") .. "/snippets"),
+					}
+					luasnip.setup(opts)
+					require("luasnip.loaders.from_vscode").load({
+						paths = vscode_snippets_path,
+					})
+				end,
 			},
 		},
 		config = function()
@@ -75,6 +75,9 @@ return {
 				sources = {
 					{ name = "buffer" },
 				},
+			})
+			cmp.setup.filetype("codecompanion", {
+				sources = cmp.config.sources({ name = "codecompanion" }),
 			})
 		end,
 	},
