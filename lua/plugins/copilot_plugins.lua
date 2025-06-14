@@ -36,8 +36,8 @@ return {
 			vim.keymap.set("n", "<Leader>cc", "<cmd>CodeCompanionChat Toggle<CR>", { noremap = true, silent = true })
 			vim.cmd([[cab cc CodeCompanion]])
 		end,
-		opts = {
-			display = {
+		opts = function(_, opts)
+			opts.display = {
 				chat = {
 					-- Change the default icons
 					icons = {
@@ -49,7 +49,7 @@ return {
 					separator = "─", -- The separator between the different messages in the chat buffer
 					show_references = true, -- Show references (from slash commands and variables) in the chat buffer?
 					show_settings = false, -- Show LLM settings at the top of the chat buffer?
-					show_token_count = true, -- Show the token count for each response?
+					show_token_count = false, -- Show the token count for each response?
 					start_in_insert_mode = false, -- Open the chat buffer in insert mode?
 				},
 				diff = {
@@ -96,8 +96,8 @@ return {
 				token_count = function(tokens, adapter)
 					return " (" .. tokens .. " tokens)"
 				end,
-			},
-			adapters = {
+			}
+			opts.adapters = {
 				llama3 = function()
 					return require("codecompanion.adapters").extend("ollama", {
 						name = "llama3.2",
@@ -121,8 +121,8 @@ return {
 						},
 					})
 				end,
-			},
-			strategies = {
+			}
+			opts.strategies = {
 				chat = {
 					adapter = {
 						name = "copilot",
@@ -130,6 +130,12 @@ return {
 					},
 					keymaps = {
 						send = {
+							callback = function(chat)
+								require("components.chat_spinner"):init()
+								vim.cmd("stopinsert")
+								chat:submit()
+								chat:add_buf_message({ role = "llm", content = "" })
+							end,
 							modes = { n = "<C-s>", i = "<C-s>" },
 							opts = {},
 						},
@@ -140,7 +146,7 @@ return {
 					},
 					roles = {
 						llm = function(adapter)
-							return "  CodeCompanion (" .. adapter.formatted_name .. ")"
+							return "  (" .. adapter.formatted_name .. ")"
 						end,
 						user = "  Me",
 					},
@@ -157,7 +163,7 @@ return {
 						model = "gpt-4.1",
 					},
 				},
-			},
-		},
+			}
+		end,
 	},
 }

@@ -46,7 +46,7 @@ return {
 			opts.sections = {
 				lualine_a = { "mode" },
 				lualine_b = { "branch", "diff", "diagnostics" },
-				lualine_c = { require("spinner") },
+				lualine_c = { require("components.statusline_spinner") },
 				lualine_x = { "encoding", "fileformat", "filetype" },
 				lualine_y = { "progress" },
 				lualine_z = { "location" },
