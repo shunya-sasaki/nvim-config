@@ -14,4 +14,7 @@ return {
 	{
 		"EdenEast/nightfox.nvim",
 	},
+	{ "rebelot/kanagawa.nvim" },
+	{ "navarasu/onedark.nvim" },
+	{ "marko-cerovac/material.nvim" },
 }

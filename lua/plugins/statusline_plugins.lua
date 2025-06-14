@@ -16,10 +16,10 @@ return {
 		opts = function(_, opts)
 			local options = nil
 			if Config.with_nf then
-				options = { theme = "onedark" }
+				options = { theme = "auto" }
 			else
 				options = {
-					theme = "onedark",
+					theme = "auto",
 					icons_enabled = false,
 					component_separators = { left = "»", right = "«" },
 					section_separators = { left = "»", right = "«" },
