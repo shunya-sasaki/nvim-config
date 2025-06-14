@@ -19,20 +19,32 @@ return {
 		opts = function(_, opts)
 			opts.automatic_installation = true
 			opts.ensure_installed = {
+				"clangd",
+				"cmake",
+				"csharp_ls",
+				"rust_analyzer",
+				"taplo",
 				"pyright",
 				"ruff",
 				"pyrefly",
 				"ts_ls",
 				"tailwindcss",
-				"clangd"
+				"cssls",
+				"marksman",
+				"powershell_es",
+				"nginx_language_server",
 			}
-			if Config.os_name == "win32" or Config.os_name == "win64" then
-				table.insert(opts.ensure_installed, "omnisharp")
-			else
-				table.insert(opts.ensure_installed, "omnisharp_mono")
-			end
 			lspconfig = require("lspconfig")
 			capabilities = require("cmp_nvim_lsp").default_capabilities()
+			lspconfig.clangd.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.csharp_ls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.rust_analyzer.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.pyright.setup({
 				capabilities = capabilities,
 			})
@@ -40,6 +52,12 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.tailwindcss.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.marksman.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.powershell_es.setup({
 				capabilities = capabilities,
 			})
 			opts.handlers = {
@@ -52,26 +70,35 @@ return {
 					})
 				end,
 			}
-		end
+		end,
 	},
 	{
 		"jay-babu/mason-null-ls.nvim",
 		opts = {
 			ensure_installed = {
+				"cpplint",
+				"clang-format",
+				"csharpier",
 				"prettier",
 				"stylua",
+				"shfmt",
 			},
 		},
 		dependencies = { "nvimtools/none-ls.nvim" },
 	},
 	{
 		"nvimtools/none-ls.nvim",
+        dependencies={"nvimtools/none-ls-extras.nvim", },
 		opts = function(_, opts)
 			local null_ls = require("null-ls")
 			opts.sources = {
+                require("none-ls.diagnostics.cpplint"), 
+				null_ls.builtins.formatting.shfmt.with({ filetypes = { "sh", "zsh", "ksh", "csh" } }),
+				null_ls.builtins.formatting.clang_format.with({ filetypes = { "c", "cpp", "h", "hpp" } }),
+				null_ls.builtins.formatting.csharpier.with({ filetypes = { "cs" } }),
 				null_ls.builtins.formatting.stylua.with({ filetypes = { "lua" } }),
 				null_ls.builtins.formatting.prettier.with({
-					filetypes = { "html", "css", "javascript", "typescript", "json" },
+					filetypes = { "markdown", "html", "css", "javascript", "typescript", "json", "tsx", "jsx" },
 				}),
 			}
 			opts.on_init = function(new_client, _)

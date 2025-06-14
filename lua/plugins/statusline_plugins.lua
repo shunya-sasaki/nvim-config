@@ -3,7 +3,7 @@ return {
 		"nvim-lualine/lualine.nvim",
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
-			config = function()
+			opts = function(_, opts)
 				if Config.with_nf then
 					require("nvim-web-devicons").setup({
 						override = {
@@ -13,7 +13,7 @@ return {
 				end
 			end,
 		},
-		config = function()
+		opts = function(_, opts)
 			local options = nil
 			if Config.with_nf then
 				options = { theme = "onedark" }

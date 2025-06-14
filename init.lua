@@ -80,9 +80,19 @@ vim.keymap.set("n", "gh", vim.lsp.buf.hover, { noremap = true, silent = true })
 -- auto format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = {
-		"*.c", "*.cc", "*.cpp", "*.h", "*.hpp",
-		"*.md", "*.json", "*.py", "*.lua",
-		"*.ts", "*.tsx", "*.js", "*.jsx"
+		"*.c",
+		"*.cc",
+		"*.cpp",
+		"*.h",
+		"*.hpp",
+		"*.md",
+		"*.json",
+		"*.py",
+		"*.lua",
+		"*.ts",
+		"*.tsx",
+		"*.js",
+		"*.jsx",
 	},
 	callback = function()
 		vim.lsp.buf.format({ async = false })
