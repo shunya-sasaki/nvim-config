@@ -7,9 +7,9 @@
 		"body": [
 			"## Author",
 			"",
-			"- Shunya Sasaki",
-			"  - Mail: [shunya.sasaki1120@gmail.com](mailto:shunya.sasaki1120@gmail.com)",
-			"  - X: [@ShunyaSasaki](https://x.com/ShunyaSasaki)"
+			"- ${1:name}",
+			"  - Mail: [${2:mail}](mailto:${2:name})",
+			"  - X: [@${3:xaccount}](https://x.com/${xaccount})"
 		]
 	}
 }
