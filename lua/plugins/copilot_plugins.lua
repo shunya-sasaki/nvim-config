@@ -21,9 +21,19 @@ return {
 					})
 				end,
 			},
+			{
+				{
+					"MeanderingProgrammer/render-markdown.nvim",
+					ft = { "markdown", "codecompanion" },
+					opts = {
+						sign = { enabled = false },
+					},
+				},
+			},
 		},
 		init = function()
 			vim.keymap.set("n", "<Leader>cc", "<cmd>CodeCompanionChat Toggle<CR>", { noremap = true, silent = true })
+			vim.cmd([[cab cc CodeCompanion]])
 		end,
 		opts = {
 			display = {
