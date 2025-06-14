@@ -12,6 +12,7 @@ return {
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"nvim-treesitter/nvim-treesitter",
+			"nvim-lualine/lualine.nvim",
 			{
 				"echasnovski/mini.diff",
 				opts = function(_, opts)

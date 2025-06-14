@@ -25,26 +25,32 @@ return {
 					section_separators = { left = "»", right = "«" },
 				}
 			end
-			require("lualine").setup({
-				globalstatus = true,
-				options = options,
-				tabline = {
-					lualine_a = {
-						{
-							"buffers",
-							mode = 4,
-							icons_enabled = true,
-							show_filename_only = true,
-							hide_filename_extensions = false,
-						},
+			opts.globalstatus = true
+			opts.options = options
+			opts.tabline = {
+				lualine_a = {
+					{
+						"buffers",
+						mode = 4,
+						icons_enabled = true,
+						show_filename_only = true,
+						hide_filename_extensions = false,
 					},
-					lualine_b = {},
-					lualine_c = {},
-					lualine_x = {},
-					lualine_y = {},
-					lualine_z = { "tabs" },
 				},
-			})
+				lualine_b = {},
+				lualine_c = {},
+				lualine_x = {},
+				lualine_y = {},
+				lualine_z = { "tabs" },
+			}
+			opts.sections = {
+				lualine_a = { "mode" },
+				lualine_b = { "branch", "diff", "diagnostics" },
+				lualine_c = { require("spinner") },
+				lualine_x = { "encoding", "fileformat", "filetype" },
+				lualine_y = { "progress" },
+				lualine_z = { "location" },
+			}
 		end,
 	},
 }
