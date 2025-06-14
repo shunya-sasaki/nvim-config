@@ -14,7 +14,7 @@ return {
 			"nvim-treesitter/nvim-treesitter",
 			{
 				"echasnovski/mini.diff",
-				config = function()
+				opts = function(_, opts)
 					local diff = require("mini.diff")
 					diff.setup({
 						source = diff.gen_source.none(),
@@ -129,7 +129,7 @@ return {
 					},
 					roles = {
 						llm = function(adapter)
-							return "   CodeCompanion (" .. adapter.formatted_name .. ")"
+							return "  CodeCompanion (" .. adapter.formatted_name .. ")"
 						end,
 						user = "  Me",
 					},

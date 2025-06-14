@@ -71,18 +71,23 @@ vim.api.nvim_create_autocmd("CursorHold", {
 		vim.diagnostic.open_float(nil, { focus = false })
 	end,
 })
-vim.api.nvim_create_autocmd("BufWritePre", {
-	pattern = { "*.py", "*.lua", "*.ts", "*.js" },
-	callback = function()
-		vim.lsp.buf.format({ async = false })
-	end,
-})
 -- goto definition
 vim.keymap.set("n", "gd", "<C-]>", { noremap = true, silent = true })
 -- rename
 vim.keymap.set("n", "gr", vim.lsp.buf.rename, { noremap = true, silent = true })
 -- hover & scroll
 vim.keymap.set("n", "gh", vim.lsp.buf.hover, { noremap = true, silent = true })
+-- auto format on save
+vim.api.nvim_create_autocmd("BufWritePre", {
+	pattern = {
+		"*.c", "*.cc", "*.cpp", "*.h", "*.hpp",
+		"*.md", "*.json", "*.py", "*.lua",
+		"*.ts", "*.tsx", "*.js", "*.jsx"
+	},
+	callback = function()
+		vim.lsp.buf.format({ async = false })
+	end,
+})
 
 -- python
 if Config.os_name == "win32" or Config.os_name == "win64" then
@@ -111,7 +116,6 @@ vim.opt.rtp:prepend(lazypath)
 
 local specs = {
 	{ import = "plugins" },
-	{ import = "plugins.extra" },
 }
 
 local local_dir = vim.fn.stdpath("config") .. "/lua/plugins/local"

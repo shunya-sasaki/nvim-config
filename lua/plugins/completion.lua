@@ -1,7 +1,6 @@
 return {
 	{
 		"hrsh7th/nvim-cmp",
-		lazy = false,
 		dependencies = {
 			"neovim/nvim-lspconfig",
 			"hrsh7th/cmp-nvim-lsp",
@@ -14,12 +13,11 @@ return {
 				"L3MON4D3/LuaSnip",
 				version = "2.*",
 				build = "make install_jsregexp",
-				lazy = false,
 				opts = {
 					history = true,
 					delete_check_events = "TextChanged", -- tidy up removed snippet text  [oai_citation:2‡github.com](https://github.com/L3MON4D3/LuaSnip?utm_source=chatgpt.com)
 				},
-				config = function(_, opts)
+				opts = function(_, opts)
 					local luasnip = require("luasnip")
 					local vscode_snippets_path = {
 						vim.fn.expand(vim.fn.stdpath("config") .. "/snippets"),
@@ -31,7 +29,7 @@ return {
 				end,
 			},
 		},
-		config = function()
+		opts = function(_, opts)
 			local cmp = require("cmp")
 			local luasnip = require("luasnip")
 			cmp.setup({
