@@ -6,16 +6,11 @@ return {
 			vim.cmd([[colorscheme tokyonight]])
 		end,
 	},
-	{
-		"tanvirtin/monokai.nvim",
-	},
-	{
-		"catppuccin/nvim",
-	},
-	{
-		"EdenEast/nightfox.nvim",
-	},
+	{ "tanvirtin/monokai.nvim" },
+	{ "catppuccin/nvim" },
+	{ "EdenEast/nightfox.nvim" },
 	{ "rebelot/kanagawa.nvim" },
 	{ "navarasu/onedark.nvim" },
 	{ "marko-cerovac/material.nvim" },
+	{ "sainnhe/sonokai" },
 }
