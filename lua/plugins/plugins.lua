@@ -14,9 +14,42 @@ return {
 			local actions = require("telescope.actions")
 			require("telescope").setup({
 				defaults = {
+					vimgrep_arguments = {
+						"rg",
+						"--hidden",
+						"--no-heading",
+						"--no-ignore",
+						"--with-filename",
+						"--line-number",
+						"--column",
+						"--smart-case",
+						"--glob=!**/.git/*",
+						"--glob=!**/.venv/*",
+						"--glob=!**/.mypy_cache/*",
+						"--glob=!**/node_modules/*",
+						"--glob=!**/dist/*",
+						"--glob=!**/build/*",
+					},
 					mappings = {
 						i = {
 							["<Esc>"] = { actions.close, type = "action", opts = { nowait = true, silent = true } },
+						},
+					},
+				},
+				pickers = {
+					find_files = {
+						hidden = false,
+						find_command = {
+							"rg",
+							"--files",
+							"--hidden",
+							"--no-ignore",
+							"--glob=!**/.git/*",
+							"--glob=!**/.venv/*",
+							"--glob=!**/.mypy_cache/*",
+							"--glob=!**/node_modules/*",
+							"--glob=!**/dist/*",
+							"--glob=!**/build/*",
 						},
 					},
 				},

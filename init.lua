@@ -64,8 +64,13 @@ vim.keymap.set("n", "<C-n>", ":bn<CR>", { silent = true })
 vim.keymap.set("n", "<C-p>", ":bp<CR>", { silent = true })
 vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR>", { silent = true })
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-N>", { noremap = true, silent = true })
-vim.api.nvim_create_user_command("ConfigInit", ":e ~/.config/nvim/init.lua", {})
-vim.api.nvim_create_user_command("ConfigPlugins", ":e ~/.config/nvim/lua/plugins.lua", {})
+-- custom commands
+vim.api.nvim_create_user_command("ConfigUserInit", ":e " .. vim.fn.stdpath("config") .. "/lua/local/user_init.lua", {})
+vim.api.nvim_create_user_command(
+	"ConfigUserPlugins",
+	":e " .. vim.fn.stdpath("config") .. "/lua/local/plugins/user_plugins.lua",
+	{}
+)
 vim.api.nvim_create_autocmd("CursorHold", {
 	callback = function()
 		vim.diagnostic.open_float(nil, { focus = false })
@@ -110,6 +115,12 @@ vim.g.loaded_ruby_provider = 0
 -- perl
 vim.g.loaded_perl_provider = 0
 
+-- user config
+local local_init = vim.fn.stdpath("config") .. "/lua/local/user_init.lua"
+if vim.loop.fs_stat(local_init) then
+	require("local.user_init")
+end
+
 -- lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -128,10 +139,10 @@ local specs = {
 	{ import = "plugins" },
 }
 
-local local_dir = vim.fn.stdpath("config") .. "/lua/plugins/local"
+local local_dir = vim.fn.stdpath("config") .. "/lua/local/plugins"
 local has_local = vim.fn.isdirectory(local_dir) == 1 and #vim.fn.globpath(local_dir, "*.lua", false, true) > 0
 if has_local then
-	table.insert(specs, { import = "plugins.local" })
+	table.insert(specs, { import = "local.plugins" })
 end
 
 require("lazy").setup(specs)

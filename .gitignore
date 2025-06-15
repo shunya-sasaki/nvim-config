@@ -1,5 +1,6 @@
 **/.DS_Store
 /sandbox/
-/lua/plugins/local/*
+/lua/local/*
 /lazy-lock.json
-!/lua/plugins/local/.gitkeep
+!/lua/local/.gitkeep
+!/lua/local/plugins/.gitkeep
