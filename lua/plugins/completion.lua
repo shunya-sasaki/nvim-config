@@ -9,6 +9,7 @@ return {
 			"hrsh7th/cmp-cmdline",
 			"saadparwaiz1/cmp_luasnip",
 			"petertriho/cmp-git",
+			"onsails/lspkind-nvim",
 			{
 				"L3MON4D3/LuaSnip",
 				version = "2.*",
@@ -32,6 +33,7 @@ return {
 		opts = function(_, opts)
 			local cmp = require("cmp")
 			local luasnip = require("luasnip")
+			local lspkind = require("lspkind")
 			cmp.setup({
 				snippet = {
 					expand = function(args)
@@ -58,6 +60,17 @@ return {
 					["<C-Space>"] = cmp.mapping.complete(),
 					["<CR>"] = cmp.mapping.confirm({ select = true }),
 				}),
+				formatting = {
+					format = lspkind.cmp_format({
+						mode = "symbol_text",
+						maxwidth = {
+							menu = 50,
+							abbr = 50,
+						},
+						ellipsis_char = "...",
+						show_labelDetails = true,
+					}),
+				},
 			})
 			-- Use git source for commit messages.
 			cmp.setup.filetype("gitcommit", {

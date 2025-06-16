@@ -27,7 +27,7 @@ return {
 						"--glob=!**/.venv/*",
 						"--glob=!**/.mypy_cache/*",
 						"--glob=!**/.next/*",
-						"--glob=!**/pcackages/*",
+						"--glob=!**/packages/*",
 						"--glob=!**/node_modules/*",
 						"--glob=!**/dist/*",
 						"--glob=!**/bin/*",
