@@ -88,11 +88,11 @@ return {
 	},
 	{
 		"nvimtools/none-ls.nvim",
-        dependencies={"nvimtools/none-ls-extras.nvim", },
+		dependencies = { "nvimtools/none-ls-extras.nvim" },
 		opts = function(_, opts)
 			local null_ls = require("null-ls")
 			opts.sources = {
-                require("none-ls.diagnostics.cpplint"), 
+				require("none-ls.diagnostics.cpplint"),
 				null_ls.builtins.formatting.shfmt.with({ filetypes = { "sh", "zsh", "ksh", "csh" } }),
 				null_ls.builtins.formatting.clang_format.with({ filetypes = { "c", "cpp", "h", "hpp" } }),
 				null_ls.builtins.formatting.csharpier.with({ filetypes = { "cs" } }),

@@ -26,9 +26,13 @@ return {
 						"--glob=!**/.git/*",
 						"--glob=!**/.venv/*",
 						"--glob=!**/.mypy_cache/*",
+						"--glob=!**/.next/*",
+						"--glob=!**/pcackages/*",
 						"--glob=!**/node_modules/*",
 						"--glob=!**/dist/*",
+						"--glob=!**/bin/*",
 						"--glob=!**/build/*",
+						"--glob=!**/out/*",
 					},
 					mappings = {
 						i = {
@@ -47,9 +51,13 @@ return {
 							"--glob=!**/.git/*",
 							"--glob=!**/.venv/*",
 							"--glob=!**/.mypy_cache/*",
+							"--glob=!**/.next/*",
+							"--glob=!**/packages/*",
 							"--glob=!**/node_modules/*",
 							"--glob=!**/dist/*",
+							"--glob=!**/bin/*",
 							"--glob=!**/build/*",
+							"--glob=!**/out/*",
 						},
 					},
 				},
@@ -60,28 +68,42 @@ return {
 	-- treesitter (syntax) ----------------------------------------------------
 	{
 		"nvim-treesitter/nvim-treesitter",
+		lazy = false,
 		build = ":TSUpdate",
 		config = function()
-			local configs = require("nvim-treesitter.configs")
+			configs = require("nvim-treesitter.configs")
 			configs.setup({
 				ensure_installed = {
+					"bash",
 					"c",
-					"cpp",
+					"c_sharp",
 					"cmake",
 					"css",
+					"diff",
 					"doxygen",
+					"fortran",
 					"git_config",
+					"gitcommit",
 					"gitignore",
 					"html",
 					"htmldjango",
+					"ini",
 					"javascript",
 					"jsdoc",
+					"json",
 					"lua",
 					"luadoc",
+					"make",
+					"markdown",
+					"markdown_inline",
 					"mermaid",
+					"nginx",
+					"powershell",
 					"python",
+					"razor",
 					"requirements",
 					"rust",
+					"sql",
 					"toml",
 					"tsx",
 					"typescript",
@@ -92,6 +114,12 @@ return {
 				sync_install = false,
 				highlight = { enable = true },
 				indent = { enable = true },
+			})
+			vim.filetype.add({
+				extension = {
+					mdx = "markdown",
+					razor = "razor",
+				},
 			})
 		end,
 	},

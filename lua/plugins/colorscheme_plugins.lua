@@ -13,4 +13,5 @@ return {
 	{ "navarasu/onedark.nvim" },
 	{ "marko-cerovac/material.nvim" },
 	{ "sainnhe/sonokai" },
+	{ "scottmckendry/cyberdream.nvim" },
 }
