@@ -35,6 +35,7 @@ return {
 		init = function()
 			vim.keymap.set("n", "<Leader>cc", "<cmd>CodeCompanionChat Toggle<CR>", { noremap = true, silent = true })
 			vim.cmd([[cab cc CodeCompanion]])
+			vim.cmd([[cab ci CodeCompanion #{buffer}]])
 		end,
 		opts = function(_, opts)
 			opts.display = {
