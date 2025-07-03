@@ -125,8 +125,8 @@ For example, you can change the colorscheme to `kanagawa` like the following.
 ```lua
 return {
 	{
-		"rebelot/kanagawa.nvim",
-		priority = 1000,
+        "rebelot/kanagawa.nvim",
+	    priority = 1000,
 		opts = function(_, opts)
 			vim.cmd([[colorscheme kanagawa]])
 		end,
@@ -139,23 +139,23 @@ And you can change the models settings for the codecompanion like the followings
 ```lua
 return {
 	{
-		"olimorris/codecompanion.nvim",
-		opts = function(_, opts)
-			opts.adapters = {
-				llama3 = function()
-					return require("codecompanion.adapters").extend("ollama", {
-						name = "llama3.2",
-						schema = {
-							model = {
-								default = "llama3.2:latest",
-							},
-						},
-					})
-				end,
-			}
-			opts.strategies.chat.adapter = "llama3"
-			opts.strategies.inline.adapter = "llama3"
-			opts.strategies.cmd.adapter = "llama3"
+    "olimorris/codecompanion.nvim",
+    opts = function(_, opts)
+        opts.adapters = {
+            llama3 = function()
+                return require("codecompanion.adapters").extend("ollama", {
+                    name = "llama3.2",
+                    schema = {
+                        model = {
+                            default = "llama3.2:latest",
+                        },
+                    },
+                })
+            end,
+        }
+        opts.strategies.chat.adapter = "llama3"
+        opts.strategies.inline.adapter = "llama3"
+        opts.strategies.cmd.adapter = "llama3"
 		end,
 	},
 }
