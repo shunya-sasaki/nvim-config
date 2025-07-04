@@ -1,0 +1,147 @@
+/*!
+  Theme: Tokyo-night-Dark
+  origin: https://github.com/enkia/tokyo-night-vscode-theme
+  Description: Original highlight.js style
+  Author: (c) Henri Vandersleyen <hvandersleyen@gmail.com>
+  Touched: 2022
+
+  BSD 3-Clause License
+
+  Copyright (c) 2006, Ivan Sagalaev.
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+
+  * Neither the name of the copyright holder nor the names of its
+    contributors may be used to endorse or promote products derived from
+    this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+*/
+
+/*  Comment */
+.hljs-meta,
+.hljs-comment {
+  color: #565f89;
+}
+
+/* Red */
+/*INFO: This keyword, HTML elements, Regex group symbol, CSS units, Terminal Red */
+.hljs-tag,
+.hljs-doctag,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-template-tag,
+.hljs-selector-pseudo,
+.hljs-selector-attr,
+.hljs-variable.language_,
+.hljs-deletion {
+  color: #f7768e;
+}
+
+/*Orange */
+/*INFO: Number and Boolean constants, Language support constants */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-number,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-link {
+  color: #ff9e64;
+}
+
+
+/*  Yellow */
+/* INFO:  	Function parameters, Regex character sets, Terminal Yellow */
+.hljs-built_in, 
+.hljs-attribute {
+  color: #e0af68;
+}
+/* cyan */
+/* INFO: Language support functions, CSS HTML elements */
+.hljs-selector-tag {
+  color: #2ac3de;
+}
+
+/* light blue */
+/* INFO: Object properties, Regex quantifiers and flags, Markdown headings, Terminal Cyan, Markdown code, Import/export keywords */
+.hljs-keyword,
+  .hljs-title.function_,
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-subst,
+.hljs-property {color: #7dcfff;}
+
+/*Green*/
+/* INFO: Object literal keys, Markdown links, Terminal Green */
+.hljs-selector-tag { color: #73daca;}
+
+
+/*Green(er) */
+/* INFO: Strings, CSS class names */
+.hljs-quote,
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #9ece6a;
+}
+
+/* Blue */
+/* INFO:  	Function names, CSS property names, Terminal Blue */
+.hljs-code,
+.hljs-formula,
+.hljs-section {
+  color: #7aa2f7;
+}
+
+
+
+/* Magenta */
+/*INFO: Control Keywords, Storage Types, Regex symbols and operators, HTML Attributes, Terminal Magenta */
+.hljs-name,
+.hljs-keyword,
+.hljs-operator,
+.hljs-keyword,
+.hljs-char.escape_,
+.hljs-attr {
+  color: #bb9af7;
+}
+
+/* white*/
+/* INFO: Variables, Class names, Terminal White */
+.hljs-punctuation {color: #c0caf5}
+
+.hljs {
+  background: #1a1b26;
+  color: #9aa5ce;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

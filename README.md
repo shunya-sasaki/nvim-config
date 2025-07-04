@@ -156,8 +156,8 @@ return {
         opts.strategies.chat.adapter = "llama3"
         opts.strategies.inline.adapter = "llama3"
         opts.strategies.cmd.adapter = "llama3"
-		end,
-	},
+    end,
+    },
 }
 ```
 

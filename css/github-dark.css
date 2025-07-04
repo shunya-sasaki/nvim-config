@@ -1,0 +1,155 @@
+/*!
+  Theme: GitHub Dark
+  Description: Dark theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-dark
+  Current colors taken from GitHub's CSS
+
+  BSD 3-Clause License
+
+  Copyright (c) 2006, Ivan Sagalaev.
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+
+  * Neither the name of the copyright holder nor the names of its
+    contributors may be used to endorse or promote products derived from
+    this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+  FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+.hljs {
+  color: #c9d1d9;
+  background: #0d1117;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #ff7b72;
+}
+
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #d2a8ff;
+}
+
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #79c0ff;
+}
+
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #a5d6ff;
+}
+
+.hljs-built_in,
+.hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #ffa657;
+}
+
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #8b949e;
+}
+
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #7ee787;
+}
+
+.hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #c9d1d9;
+}
+
+.hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #1f6feb;
+  font-weight: bold;
+}
+
+.hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #f2cc60;
+}
+
+.hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #c9d1d9;
+  font-style: italic;
+}
+
+.hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #c9d1d9;
+  font-weight: bold;
+}
+
+.hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #aff5b4;
+  background-color: #033a16;
+}
+
+.hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #ffdcd7;
+  background-color: #67060c;
+}
+
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  /* purposely ignored */
+}
