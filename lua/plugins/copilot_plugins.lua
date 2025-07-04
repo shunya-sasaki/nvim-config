@@ -15,10 +15,15 @@ return {
 			"nvim-lualine/lualine.nvim",
 			{
 				"echasnovski/mini.diff",
-				opts = function(_, opts)
+				config = function()
 					local diff = require("mini.diff")
 					diff.setup({
 						source = diff.gen_source.none(),
+						mappings = {
+							apply = "",
+							reset = "",
+							textobject = "",
+						},
 					})
 				end,
 			},
