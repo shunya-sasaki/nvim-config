@@ -104,6 +104,18 @@ return {
 				end,
 			}
 			opts.adapters = {
+				gemini = function()
+					return require("codecompanion.adapters").extend("gemini", {
+						env = {
+							api_key = os.getenv("GEMINI_API_KEY"),
+						},
+						schema = {
+							model = {
+								default = "gemini-2.5-pro",
+							},
+						},
+					})
+				end,
 				llama3 = function()
 					return require("codecompanion.adapters").extend("ollama", {
 						name = "llama3.2",

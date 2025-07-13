@@ -3,10 +3,6 @@
   "contributes": {
     "snippets": [
       {
-        "language": "markdown",
-        "path": "./readme.code-snippets"
-      },
-      {
         "language": "toml",
         "path": "./pyproject.code-snippets"
       },
@@ -15,15 +11,15 @@
         "path": "./gitignore.code-snippets"
       },
       {
+        "language": "markdown",
+        "path": "./readme.code-snippets"
+      },
+      {
         "language": "text",
         "path": "./mit.code-snippets"
       },
       {
-        "language": "python",
-        "path": "./sphinx.code-snippets"
-      },
-      {
-        "language": "markdown,typescript,javascript,mdx",
+        "language": "markdown",
         "path": "./mermaid.code-snippets"
       }
     ]

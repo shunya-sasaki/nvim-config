@@ -1,15 +1,14 @@
-
 {
-	"Author":{
-		"prefix": "author",
-        "scope": "markdown",
-        "description": "Author for README.md",
-		"body": [
-			"## Author",
-			"",
-			"- ${1:name}",
-			"  - Mail: [${2:mail}](mailto:${2:name})",
-			"  - X: [@${3:xaccount}](https://x.com/${xaccount})"
-		]
-	}
+  "Author": {
+    "prefix": "author",
+    "scope": "markdown",
+    "description": "Author for README.md",
+    "body": [
+      "## Author",
+      "",
+      "- Shunya Sasaki",
+      "  - Mail: [shunya.sasaki1120@gmail.com](mailto:shunya.sasaki1120@gmail.com)",
+      "  - X: [@ShunyaSasaki](https://x.com/ShunyaSasaki)"
+    ]
+  }
 }
