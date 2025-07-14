@@ -2,6 +2,18 @@
 
 Configuration files for Neovim.
 
+- [Required](#required)
+  - [Optional](#optional)
+- [Plugins](#plugins)
+- [Setup](#setup)
+  - [Set nvim as default editor for git](#set-nvim-as-default-editor-for-git)
+  - [Set enable to add diff in git commit](#set-enable-to-add-diff-in-git-commit)
+- [Shortcut keys and commands](#shortcut-keys-and-commands)
+- [User configuration](#user-configuration)
+  - [Confugiration user init file](#confugiration-user-init-file)
+  - [Configure user plugins](#configure-user-plugins)
+- [License](#license)
+
 ## Required
 
 - [Neovim](https://neovim.io)

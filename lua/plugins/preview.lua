@@ -1,5 +1,26 @@
 return {
 	{
+		"hedyhli/markdown-toc.nvim",
+		ft = "markdown", -- Lazy load on markdown filetype
+		cmd = { "Mtoc" }, -- Or, lazy load on "Mtoc" command
+		opts = {
+			headings = {
+				before_toc = false,
+				pattern = "^(###?)%s+(.+)$",
+			},
+			fences = {
+				enabled = false,
+				start_text = "mtoc-start",
+				end_text = "mtoc-end",
+			},
+			auto_update = true,
+			toc_list = {
+				markers = "-",
+				cycle_markers = false,
+			},
+		},
+	},
+	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
 		ft = { "markdown" },
