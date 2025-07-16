@@ -1,0 +1,902 @@
+{
+  "accent": {
+    "prefix": "hex-accent",
+    "body": "#2b72b3",
+    "description": "Color accent in hex format."
+  },
+  "accent-100": {
+    "prefix": "hex-accent-100",
+    "body": "#2b72b3",
+    "description": "Color accent-100 in hex format."
+  },
+  "accent-120": {
+    "prefix": "hex-accent-120",
+    "body": "#225b8f",
+    "description": "Color accent-120 in hex format."
+  },
+  "accent-140": {
+    "prefix": "hex-accent-140",
+    "body": "#19446b",
+    "description": "Color accent-140 in hex format."
+  },
+  "accent-160": {
+    "prefix": "hex-accent-160",
+    "body": "#112d47",
+    "description": "Color accent-160 in hex format."
+  },
+  "accent-180": {
+    "prefix": "hex-accent-180",
+    "body": "#081623",
+    "description": "Color accent-180 in hex format."
+  },
+  "accent-20": {
+    "prefix": "hex-accent-20",
+    "body": "#d4e2ef",
+    "description": "Color accent-20 in hex format."
+  },
+  "accent-40": {
+    "prefix": "hex-accent-40",
+    "body": "#aac6e0",
+    "description": "Color accent-40 in hex format."
+  },
+  "accent-60": {
+    "prefix": "hex-accent-60",
+    "body": "#7faad1",
+    "description": "Color accent-60 in hex format."
+  },
+  "accent-80": {
+    "prefix": "hex-accent-80",
+    "body": "#558ec2",
+    "description": "Color accent-80 in hex format."
+  },
+  "black": {
+    "prefix": "hex-black",
+    "body": "#000000",
+    "description": "Color black in hex format."
+  },
+  "black-100": {
+    "prefix": "hex-black-100",
+    "body": "#000000",
+    "description": "Color black-100 in hex format."
+  },
+  "black-120": {
+    "prefix": "hex-black-120",
+    "body": "#000000",
+    "description": "Color black-120 in hex format."
+  },
+  "black-140": {
+    "prefix": "hex-black-140",
+    "body": "#000000",
+    "description": "Color black-140 in hex format."
+  },
+  "black-160": {
+    "prefix": "hex-black-160",
+    "body": "#000000",
+    "description": "Color black-160 in hex format."
+  },
+  "black-180": {
+    "prefix": "hex-black-180",
+    "body": "#000000",
+    "description": "Color black-180 in hex format."
+  },
+  "black-20": {
+    "prefix": "hex-black-20",
+    "body": "#cccccc",
+    "description": "Color black-20 in hex format."
+  },
+  "black-40": {
+    "prefix": "hex-black-40",
+    "body": "#999999",
+    "description": "Color black-40 in hex format."
+  },
+  "black-60": {
+    "prefix": "hex-black-60",
+    "body": "#666666",
+    "description": "Color black-60 in hex format."
+  },
+  "black-80": {
+    "prefix": "hex-black-80",
+    "body": "#323232",
+    "description": "Color black-80 in hex format."
+  },
+  "dark-blue": {
+    "prefix": "hex-dark-blue",
+    "body": "#006487",
+    "description": "Color dark-blue in hex format."
+  },
+  "dark-blue-100": {
+    "prefix": "hex-dark-blue-100",
+    "body": "#006487",
+    "description": "Color dark-blue-100 in hex format."
+  },
+  "dark-blue-120": {
+    "prefix": "hex-dark-blue-120",
+    "body": "#00506c",
+    "description": "Color dark-blue-120 in hex format."
+  },
+  "dark-blue-140": {
+    "prefix": "hex-dark-blue-140",
+    "body": "#003c51",
+    "description": "Color dark-blue-140 in hex format."
+  },
+  "dark-blue-160": {
+    "prefix": "hex-dark-blue-160",
+    "body": "#002836",
+    "description": "Color dark-blue-160 in hex format."
+  },
+  "dark-blue-180": {
+    "prefix": "hex-dark-blue-180",
+    "body": "#00141b",
+    "description": "Color dark-blue-180 in hex format."
+  },
+  "dark-blue-20": {
+    "prefix": "hex-dark-blue-20",
+    "body": "#cce0e7",
+    "description": "Color dark-blue-20 in hex format."
+  },
+  "dark-blue-40": {
+    "prefix": "hex-dark-blue-40",
+    "body": "#99c1cf",
+    "description": "Color dark-blue-40 in hex format."
+  },
+  "dark-blue-60": {
+    "prefix": "hex-dark-blue-60",
+    "body": "#66a2b7",
+    "description": "Color dark-blue-60 in hex format."
+  },
+  "dark-blue-80": {
+    "prefix": "hex-dark-blue-80",
+    "body": "#32839f",
+    "description": "Color dark-blue-80 in hex format."
+  },
+  "dark-blue-gray1": {
+    "prefix": "hex-dark-blue-gray1",
+    "body": "#567783",
+    "description": "Color dark-blue-gray1 in hex format."
+  },
+  "dark-blue-gray1-100": {
+    "prefix": "hex-dark-blue-gray1-100",
+    "body": "#567783",
+    "description": "Color dark-blue-gray1-100 in hex format."
+  },
+  "dark-blue-gray1-120": {
+    "prefix": "hex-dark-blue-gray1-120",
+    "body": "#445f68",
+    "description": "Color dark-blue-gray1-120 in hex format."
+  },
+  "dark-blue-gray1-140": {
+    "prefix": "hex-dark-blue-gray1-140",
+    "body": "#33474e",
+    "description": "Color dark-blue-gray1-140 in hex format."
+  },
+  "dark-blue-gray1-160": {
+    "prefix": "hex-dark-blue-gray1-160",
+    "body": "#222f34",
+    "description": "Color dark-blue-gray1-160 in hex format."
+  },
+  "dark-blue-gray1-180": {
+    "prefix": "hex-dark-blue-gray1-180",
+    "body": "#11171a",
+    "description": "Color dark-blue-gray1-180 in hex format."
+  },
+  "dark-blue-gray1-20": {
+    "prefix": "hex-dark-blue-gray1-20",
+    "body": "#dde3e6",
+    "description": "Color dark-blue-gray1-20 in hex format."
+  },
+  "dark-blue-gray1-40": {
+    "prefix": "hex-dark-blue-gray1-40",
+    "body": "#bbc8cd",
+    "description": "Color dark-blue-gray1-40 in hex format."
+  },
+  "dark-blue-gray1-60": {
+    "prefix": "hex-dark-blue-gray1-60",
+    "body": "#99adb4",
+    "description": "Color dark-blue-gray1-60 in hex format."
+  },
+  "dark-blue-gray1-80": {
+    "prefix": "hex-dark-blue-gray1-80",
+    "body": "#77929b",
+    "description": "Color dark-blue-gray1-80 in hex format."
+  },
+  "dark-blue-gray2": {
+    "prefix": "hex-dark-blue-gray2",
+    "body": "#3c5d69",
+    "description": "Color dark-blue-gray2 in hex format."
+  },
+  "dark-blue-gray2-100": {
+    "prefix": "hex-dark-blue-gray2-100",
+    "body": "#3c5d69",
+    "description": "Color dark-blue-gray2-100 in hex format."
+  },
+  "dark-blue-gray2-120": {
+    "prefix": "hex-dark-blue-gray2-120",
+    "body": "#304a54",
+    "description": "Color dark-blue-gray2-120 in hex format."
+  },
+  "dark-blue-gray2-140": {
+    "prefix": "hex-dark-blue-gray2-140",
+    "body": "#24373f",
+    "description": "Color dark-blue-gray2-140 in hex format."
+  },
+  "dark-blue-gray2-160": {
+    "prefix": "hex-dark-blue-gray2-160",
+    "body": "#18252a",
+    "description": "Color dark-blue-gray2-160 in hex format."
+  },
+  "dark-blue-gray2-180": {
+    "prefix": "hex-dark-blue-gray2-180",
+    "body": "#0c1215",
+    "description": "Color dark-blue-gray2-180 in hex format."
+  },
+  "dark-blue-gray2-20": {
+    "prefix": "hex-dark-blue-gray2-20",
+    "body": "#d8dee1",
+    "description": "Color dark-blue-gray2-20 in hex format."
+  },
+  "dark-blue-gray2-40": {
+    "prefix": "hex-dark-blue-gray2-40",
+    "body": "#b1bec3",
+    "description": "Color dark-blue-gray2-40 in hex format."
+  },
+  "dark-blue-gray2-60": {
+    "prefix": "hex-dark-blue-gray2-60",
+    "body": "#8a9da5",
+    "description": "Color dark-blue-gray2-60 in hex format."
+  },
+  "dark-blue-gray2-80": {
+    "prefix": "hex-dark-blue-gray2-80",
+    "body": "#637d87",
+    "description": "Color dark-blue-gray2-80 in hex format."
+  },
+  "dark-blue-gray3": {
+    "prefix": "hex-dark-blue-gray3",
+    "body": "#223f4b",
+    "description": "Color dark-blue-gray3 in hex format."
+  },
+  "dark-blue-gray3-100": {
+    "prefix": "hex-dark-blue-gray3-100",
+    "body": "#223f4b",
+    "description": "Color dark-blue-gray3-100 in hex format."
+  },
+  "dark-blue-gray3-120": {
+    "prefix": "hex-dark-blue-gray3-120",
+    "body": "#1b323c",
+    "description": "Color dark-blue-gray3-120 in hex format."
+  },
+  "dark-blue-gray3-140": {
+    "prefix": "hex-dark-blue-gray3-140",
+    "body": "#14252d",
+    "description": "Color dark-blue-gray3-140 in hex format."
+  },
+  "dark-blue-gray3-160": {
+    "prefix": "hex-dark-blue-gray3-160",
+    "body": "#0d191e",
+    "description": "Color dark-blue-gray3-160 in hex format."
+  },
+  "dark-blue-gray3-180": {
+    "prefix": "hex-dark-blue-gray3-180",
+    "body": "#060c0f",
+    "description": "Color dark-blue-gray3-180 in hex format."
+  },
+  "dark-blue-gray3-20": {
+    "prefix": "hex-dark-blue-gray3-20",
+    "body": "#d2d8db",
+    "description": "Color dark-blue-gray3-20 in hex format."
+  },
+  "dark-blue-gray3-40": {
+    "prefix": "hex-dark-blue-gray3-40",
+    "body": "#a6b2b7",
+    "description": "Color dark-blue-gray3-40 in hex format."
+  },
+  "dark-blue-gray3-60": {
+    "prefix": "hex-dark-blue-gray3-60",
+    "body": "#7a8b93",
+    "description": "Color dark-blue-gray3-60 in hex format."
+  },
+  "dark-blue-gray3-80": {
+    "prefix": "hex-dark-blue-gray3-80",
+    "body": "#4e656f",
+    "description": "Color dark-blue-gray3-80 in hex format."
+  },
+  "dark-green": {
+    "prefix": "hex-dark-green",
+    "body": "#647d2d",
+    "description": "Color dark-green in hex format."
+  },
+  "dark-green-100": {
+    "prefix": "hex-dark-green-100",
+    "body": "#647d2d",
+    "description": "Color dark-green-100 in hex format."
+  },
+  "dark-green-120": {
+    "prefix": "hex-dark-green-120",
+    "body": "#506424",
+    "description": "Color dark-green-120 in hex format."
+  },
+  "dark-green-140": {
+    "prefix": "hex-dark-green-140",
+    "body": "#3c4b1b",
+    "description": "Color dark-green-140 in hex format."
+  },
+  "dark-green-160": {
+    "prefix": "hex-dark-green-160",
+    "body": "#283212",
+    "description": "Color dark-green-160 in hex format."
+  },
+  "dark-green-180": {
+    "prefix": "hex-dark-green-180",
+    "body": "#141909",
+    "description": "Color dark-green-180 in hex format."
+  },
+  "dark-green-20": {
+    "prefix": "hex-dark-green-20",
+    "body": "#e0e5d5",
+    "description": "Color dark-green-20 in hex format."
+  },
+  "dark-green-40": {
+    "prefix": "hex-dark-green-40",
+    "body": "#c1cbab",
+    "description": "Color dark-green-40 in hex format."
+  },
+  "dark-green-60": {
+    "prefix": "hex-dark-green-60",
+    "body": "#a2b181",
+    "description": "Color dark-green-60 in hex format."
+  },
+  "dark-green-80": {
+    "prefix": "hex-dark-green-80",
+    "body": "#839757",
+    "description": "Color dark-green-80 in hex format."
+  },
+  "dark-purple": {
+    "prefix": "hex-dark-purple",
+    "body": "#6e1e4b",
+    "description": "Color dark-purple in hex format."
+  },
+  "dark-purple-100": {
+    "prefix": "hex-dark-purple-100",
+    "body": "#6e1e4b",
+    "description": "Color dark-purple-100 in hex format."
+  },
+  "dark-purple-120": {
+    "prefix": "hex-dark-purple-120",
+    "body": "#58183c",
+    "description": "Color dark-purple-120 in hex format."
+  },
+  "dark-purple-140": {
+    "prefix": "hex-dark-purple-140",
+    "body": "#42122d",
+    "description": "Color dark-purple-140 in hex format."
+  },
+  "dark-purple-160": {
+    "prefix": "hex-dark-purple-160",
+    "body": "#2c0c1e",
+    "description": "Color dark-purple-160 in hex format."
+  },
+  "dark-purple-180": {
+    "prefix": "hex-dark-purple-180",
+    "body": "#16060f",
+    "description": "Color dark-purple-180 in hex format."
+  },
+  "dark-purple-20": {
+    "prefix": "hex-dark-purple-20",
+    "body": "#e2d2db",
+    "description": "Color dark-purple-20 in hex format."
+  },
+  "dark-purple-40": {
+    "prefix": "hex-dark-purple-40",
+    "body": "#c5a5b7",
+    "description": "Color dark-purple-40 in hex format."
+  },
+  "dark-purple-60": {
+    "prefix": "hex-dark-purple-60",
+    "body": "#a87893",
+    "description": "Color dark-purple-60 in hex format."
+  },
+  "dark-purple-80": {
+    "prefix": "hex-dark-purple-80",
+    "body": "#8b4b6f",
+    "description": "Color dark-purple-80 in hex format."
+  },
+  "dark-yellow": {
+    "prefix": "hex-dark-yellow",
+    "body": "#dc6914",
+    "description": "Color dark-yellow in hex format."
+  },
+  "dark-yellow-100": {
+    "prefix": "hex-dark-yellow-100",
+    "body": "#dc6914",
+    "description": "Color dark-yellow-100 in hex format."
+  },
+  "dark-yellow-120": {
+    "prefix": "hex-dark-yellow-120",
+    "body": "#b05410",
+    "description": "Color dark-yellow-120 in hex format."
+  },
+  "dark-yellow-140": {
+    "prefix": "hex-dark-yellow-140",
+    "body": "#843f0c",
+    "description": "Color dark-yellow-140 in hex format."
+  },
+  "dark-yellow-160": {
+    "prefix": "hex-dark-yellow-160",
+    "body": "#582a08",
+    "description": "Color dark-yellow-160 in hex format."
+  },
+  "dark-yellow-180": {
+    "prefix": "hex-dark-yellow-180",
+    "body": "#2c1504",
+    "description": "Color dark-yellow-180 in hex format."
+  },
+  "dark-yellow-20": {
+    "prefix": "hex-dark-yellow-20",
+    "body": "#f8e1d0",
+    "description": "Color dark-yellow-20 in hex format."
+  },
+  "dark-yellow-40": {
+    "prefix": "hex-dark-yellow-40",
+    "body": "#f1c3a1",
+    "description": "Color dark-yellow-40 in hex format."
+  },
+  "dark-yellow-60": {
+    "prefix": "hex-dark-yellow-60",
+    "body": "#eaa572",
+    "description": "Color dark-yellow-60 in hex format."
+  },
+  "dark-yellow-80": {
+    "prefix": "hex-dark-yellow-80",
+    "body": "#e38743",
+    "description": "Color dark-yellow-80 in hex format."
+  },
+  "gray": {
+    "prefix": "hex-gray",
+    "body": "#999999",
+    "description": "Color gray in hex format."
+  },
+  "gray-100": {
+    "prefix": "hex-gray-100",
+    "body": "#999999",
+    "description": "Color gray-100 in hex format."
+  },
+  "gray-120": {
+    "prefix": "hex-gray-120",
+    "body": "#7a7a7a",
+    "description": "Color gray-120 in hex format."
+  },
+  "gray-140": {
+    "prefix": "hex-gray-140",
+    "body": "#5b5b5b",
+    "description": "Color gray-140 in hex format."
+  },
+  "gray-160": {
+    "prefix": "hex-gray-160",
+    "body": "#3d3d3d",
+    "description": "Color gray-160 in hex format."
+  },
+  "gray-180": {
+    "prefix": "hex-gray-180",
+    "body": "#1e1e1e",
+    "description": "Color gray-180 in hex format."
+  },
+  "gray-20": {
+    "prefix": "hex-gray-20",
+    "body": "#eaeaea",
+    "description": "Color gray-20 in hex format."
+  },
+  "gray-40": {
+    "prefix": "hex-gray-40",
+    "body": "#d6d6d6",
+    "description": "Color gray-40 in hex format."
+  },
+  "gray-60": {
+    "prefix": "hex-gray-60",
+    "body": "#c1c1c1",
+    "description": "Color gray-60 in hex format."
+  },
+  "gray-80": {
+    "prefix": "hex-gray-80",
+    "body": "#adadad",
+    "description": "Color gray-80 in hex format."
+  },
+  "light-blue": {
+    "prefix": "hex-light-blue",
+    "body": "#64afd2",
+    "description": "Color light-blue in hex format."
+  },
+  "light-blue-100": {
+    "prefix": "hex-light-blue-100",
+    "body": "#64afd2",
+    "description": "Color light-blue-100 in hex format."
+  },
+  "light-blue-120": {
+    "prefix": "hex-light-blue-120",
+    "body": "#508ca8",
+    "description": "Color light-blue-120 in hex format."
+  },
+  "light-blue-140": {
+    "prefix": "hex-light-blue-140",
+    "body": "#3c697e",
+    "description": "Color light-blue-140 in hex format."
+  },
+  "light-blue-160": {
+    "prefix": "hex-light-blue-160",
+    "body": "#284654",
+    "description": "Color light-blue-160 in hex format."
+  },
+  "light-blue-180": {
+    "prefix": "hex-light-blue-180",
+    "body": "#14232a",
+    "description": "Color light-blue-180 in hex format."
+  },
+  "light-blue-20": {
+    "prefix": "hex-light-blue-20",
+    "body": "#e0eff6",
+    "description": "Color light-blue-20 in hex format."
+  },
+  "light-blue-40": {
+    "prefix": "hex-light-blue-40",
+    "body": "#c1dfed",
+    "description": "Color light-blue-40 in hex format."
+  },
+  "light-blue-60": {
+    "prefix": "hex-light-blue-60",
+    "body": "#a2cfe4",
+    "description": "Color light-blue-60 in hex format."
+  },
+  "light-blue-80": {
+    "prefix": "hex-light-blue-80",
+    "body": "#83bfdb",
+    "description": "Color light-blue-80 in hex format."
+  },
+  "light-green": {
+    "prefix": "hex-light-green",
+    "body": "#91af1e",
+    "description": "Color light-green in hex format."
+  },
+  "light-green-100": {
+    "prefix": "hex-light-green-100",
+    "body": "#91af1e",
+    "description": "Color light-green-100 in hex format."
+  },
+  "light-green-120": {
+    "prefix": "hex-light-green-120",
+    "body": "#748c18",
+    "description": "Color light-green-120 in hex format."
+  },
+  "light-green-140": {
+    "prefix": "hex-light-green-140",
+    "body": "#576912",
+    "description": "Color light-green-140 in hex format."
+  },
+  "light-green-160": {
+    "prefix": "hex-light-green-160",
+    "body": "#3a460c",
+    "description": "Color light-green-160 in hex format."
+  },
+  "light-green-180": {
+    "prefix": "hex-light-green-180",
+    "body": "#1d2306",
+    "description": "Color light-green-180 in hex format."
+  },
+  "light-green-20": {
+    "prefix": "hex-light-green-20",
+    "body": "#e9efd2",
+    "description": "Color light-green-20 in hex format."
+  },
+  "light-green-40": {
+    "prefix": "hex-light-green-40",
+    "body": "#d3dfa5",
+    "description": "Color light-green-40 in hex format."
+  },
+  "light-green-60": {
+    "prefix": "hex-light-green-60",
+    "body": "#bdcf78",
+    "description": "Color light-green-60 in hex format."
+  },
+  "light-green-80": {
+    "prefix": "hex-light-green-80",
+    "body": "#a7bf4b",
+    "description": "Color light-green-80 in hex format."
+  },
+  "light-purple": {
+    "prefix": "hex-light-purple",
+    "body": "#af235f",
+    "description": "Color light-purple in hex format."
+  },
+  "light-purple-100": {
+    "prefix": "hex-light-purple-100",
+    "body": "#af235f",
+    "description": "Color light-purple-100 in hex format."
+  },
+  "light-purple-120": {
+    "prefix": "hex-light-purple-120",
+    "body": "#8c1c4c",
+    "description": "Color light-purple-120 in hex format."
+  },
+  "light-purple-140": {
+    "prefix": "hex-light-purple-140",
+    "body": "#691539",
+    "description": "Color light-purple-140 in hex format."
+  },
+  "light-purple-160": {
+    "prefix": "hex-light-purple-160",
+    "body": "#460e26",
+    "description": "Color light-purple-160 in hex format."
+  },
+  "light-purple-180": {
+    "prefix": "hex-light-purple-180",
+    "body": "#230713",
+    "description": "Color light-purple-180 in hex format."
+  },
+  "light-purple-20": {
+    "prefix": "hex-light-purple-20",
+    "body": "#efd3df",
+    "description": "Color light-purple-20 in hex format."
+  },
+  "light-purple-40": {
+    "prefix": "hex-light-purple-40",
+    "body": "#dfa7bf",
+    "description": "Color light-purple-40 in hex format."
+  },
+  "light-purple-60": {
+    "prefix": "hex-light-purple-60",
+    "body": "#cf7b9f",
+    "description": "Color light-purple-60 in hex format."
+  },
+  "light-purple-80": {
+    "prefix": "hex-light-purple-80",
+    "body": "#bf4f7f",
+    "description": "Color light-purple-80 in hex format."
+  },
+  "light-yellow": {
+    "prefix": "hex-light-yellow",
+    "body": "#ffb900",
+    "description": "Color light-yellow in hex format."
+  },
+  "light-yellow-100": {
+    "prefix": "hex-light-yellow-100",
+    "body": "#ffb900",
+    "description": "Color light-yellow-100 in hex format."
+  },
+  "light-yellow-120": {
+    "prefix": "hex-light-yellow-120",
+    "body": "#cc9400",
+    "description": "Color light-yellow-120 in hex format."
+  },
+  "light-yellow-140": {
+    "prefix": "hex-light-yellow-140",
+    "body": "#996f00",
+    "description": "Color light-yellow-140 in hex format."
+  },
+  "light-yellow-160": {
+    "prefix": "hex-light-yellow-160",
+    "body": "#664a00",
+    "description": "Color light-yellow-160 in hex format."
+  },
+  "light-yellow-180": {
+    "prefix": "hex-light-yellow-180",
+    "body": "#332500",
+    "description": "Color light-yellow-180 in hex format."
+  },
+  "light-yellow-20": {
+    "prefix": "hex-light-yellow-20",
+    "body": "#fff1cc",
+    "description": "Color light-yellow-20 in hex format."
+  },
+  "light-yellow-40": {
+    "prefix": "hex-light-yellow-40",
+    "body": "#ffe399",
+    "description": "Color light-yellow-40 in hex format."
+  },
+  "light-yellow-60": {
+    "prefix": "hex-light-yellow-60",
+    "body": "#ffd566",
+    "description": "Color light-yellow-60 in hex format."
+  },
+  "light-yellow-80": {
+    "prefix": "hex-light-yellow-80",
+    "body": "#ffc732",
+    "description": "Color light-yellow-80 in hex format."
+  },
+  "main-red": {
+    "prefix": "hex-main-red",
+    "body": "#e31f26",
+    "description": "Color main-red in hex format."
+  },
+  "main-red-100": {
+    "prefix": "hex-main-red-100",
+    "body": "#e31f26",
+    "description": "Color main-red-100 in hex format."
+  },
+  "main-red-120": {
+    "prefix": "hex-main-red-120",
+    "body": "#b5181e",
+    "description": "Color main-red-120 in hex format."
+  },
+  "main-red-140": {
+    "prefix": "hex-main-red-140",
+    "body": "#881216",
+    "description": "Color main-red-140 in hex format."
+  },
+  "main-red-160": {
+    "prefix": "hex-main-red-160",
+    "body": "#5a0c0f",
+    "description": "Color main-red-160 in hex format."
+  },
+  "main-red-180": {
+    "prefix": "hex-main-red-180",
+    "body": "#2d0607",
+    "description": "Color main-red-180 in hex format."
+  },
+  "main-red-20": {
+    "prefix": "hex-main-red-20",
+    "body": "#f9d2d3",
+    "description": "Color main-red-20 in hex format."
+  },
+  "main-red-40": {
+    "prefix": "hex-main-red-40",
+    "body": "#f3a5a8",
+    "description": "Color main-red-40 in hex format."
+  },
+  "main-red-60": {
+    "prefix": "hex-main-red-60",
+    "body": "#ee787c",
+    "description": "Color main-red-60 in hex format."
+  },
+  "main-red-80": {
+    "prefix": "hex-main-red-80",
+    "body": "#e84b51",
+    "description": "Color main-red-80 in hex format."
+  },
+  "middle-blue": {
+    "prefix": "hex-middle-blue",
+    "body": "#2b72b3",
+    "description": "Color middle-blue in hex format."
+  },
+  "middle-blue-100": {
+    "prefix": "hex-middle-blue-100",
+    "body": "#2b72b3",
+    "description": "Color middle-blue-100 in hex format."
+  },
+  "middle-blue-120": {
+    "prefix": "hex-middle-blue-120",
+    "body": "#225b8f",
+    "description": "Color middle-blue-120 in hex format."
+  },
+  "middle-blue-140": {
+    "prefix": "hex-middle-blue-140",
+    "body": "#19446b",
+    "description": "Color middle-blue-140 in hex format."
+  },
+  "middle-blue-160": {
+    "prefix": "hex-middle-blue-160",
+    "body": "#112d47",
+    "description": "Color middle-blue-160 in hex format."
+  },
+  "middle-blue-180": {
+    "prefix": "hex-middle-blue-180",
+    "body": "#081623",
+    "description": "Color middle-blue-180 in hex format."
+  },
+  "middle-blue-20": {
+    "prefix": "hex-middle-blue-20",
+    "body": "#d4e2ef",
+    "description": "Color middle-blue-20 in hex format."
+  },
+  "middle-blue-40": {
+    "prefix": "hex-middle-blue-40",
+    "body": "#aac6e0",
+    "description": "Color middle-blue-40 in hex format."
+  },
+  "middle-blue-60": {
+    "prefix": "hex-middle-blue-60",
+    "body": "#7faad1",
+    "description": "Color middle-blue-60 in hex format."
+  },
+  "middle-blue-80": {
+    "prefix": "hex-middle-blue-80",
+    "body": "#558ec2",
+    "description": "Color middle-blue-80 in hex format."
+  },
+  "primary-gray": {
+    "prefix": "hex-primary-gray",
+    "body": "#82a0aa",
+    "description": "Color primary-gray in hex format."
+  },
+  "primary-gray-100": {
+    "prefix": "hex-primary-gray-100",
+    "body": "#82a0aa",
+    "description": "Color primary-gray-100 in hex format."
+  },
+  "primary-gray-120": {
+    "prefix": "hex-primary-gray-120",
+    "body": "#688088",
+    "description": "Color primary-gray-120 in hex format."
+  },
+  "primary-gray-140": {
+    "prefix": "hex-primary-gray-140",
+    "body": "#4e6066",
+    "description": "Color primary-gray-140 in hex format."
+  },
+  "primary-gray-160": {
+    "prefix": "hex-primary-gray-160",
+    "body": "#344044",
+    "description": "Color primary-gray-160 in hex format."
+  },
+  "primary-gray-180": {
+    "prefix": "hex-primary-gray-180",
+    "body": "#1a2022",
+    "description": "Color primary-gray-180 in hex format."
+  },
+  "primary-gray-20": {
+    "prefix": "hex-primary-gray-20",
+    "body": "#e6ecee",
+    "description": "Color primary-gray-20 in hex format."
+  },
+  "primary-gray-40": {
+    "prefix": "hex-primary-gray-40",
+    "body": "#cdd9dd",
+    "description": "Color primary-gray-40 in hex format."
+  },
+  "primary-gray-60": {
+    "prefix": "hex-primary-gray-60",
+    "body": "#b4c6cc",
+    "description": "Color primary-gray-60 in hex format."
+  },
+  "primary-gray-80": {
+    "prefix": "hex-primary-gray-80",
+    "body": "#9bb3bb",
+    "description": "Color primary-gray-80 in hex format."
+  },
+  "white": {
+    "prefix": "hex-white",
+    "body": "#ffffff",
+    "description": "Color white in hex format."
+  },
+  "white-100": {
+    "prefix": "hex-white-100",
+    "body": "#ffffff",
+    "description": "Color white-100 in hex format."
+  },
+  "white-120": {
+    "prefix": "hex-white-120",
+    "body": "#cccccc",
+    "description": "Color white-120 in hex format."
+  },
+  "white-140": {
+    "prefix": "hex-white-140",
+    "body": "#999999",
+    "description": "Color white-140 in hex format."
+  },
+  "white-160": {
+    "prefix": "hex-white-160",
+    "body": "#666666",
+    "description": "Color white-160 in hex format."
+  },
+  "white-180": {
+    "prefix": "hex-white-180",
+    "body": "#333333",
+    "description": "Color white-180 in hex format."
+  },
+  "white-20": {
+    "prefix": "hex-white-20",
+    "body": "#ffffff",
+    "description": "Color white-20 in hex format."
+  },
+  "white-40": {
+    "prefix": "hex-white-40",
+    "body": "#ffffff",
+    "description": "Color white-40 in hex format."
+  },
+  "white-60": {
+    "prefix": "hex-white-60",
+    "body": "#ffffff",
+    "description": "Color white-60 in hex format."
+  },
+  "white-80": {
+    "prefix": "hex-white-80",
+    "body": "#ffffff",
+    "description": "Color white-80 in hex format."
+  }
+}

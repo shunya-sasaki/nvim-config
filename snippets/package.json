@@ -19,11 +19,15 @@
         "path": "./mit.code-snippets"
       },
       {
+        "language": "all",
+        "path": "./color-code.code-snippets"
+      },
+      {
         "language": "python",
         "path": "./sphinx.code-snippets"
       },
       {
-        "language": "typescript,javascript,mdx,markdown",
+        "language": "markdown,mdx,javascript,typescript",
         "path": "./mermaid.code-snippets"
       }
     ]
