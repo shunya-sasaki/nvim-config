@@ -23,7 +23,7 @@
         "path": "./sphinx.code-snippets"
       },
       {
-        "language": "markdown,typescript,javascript,mdx",
+        "language": "typescript,javascript,mdx,markdown",
         "path": "./mermaid.code-snippets"
       }
     ]

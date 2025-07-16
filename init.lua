@@ -101,7 +101,44 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 		"*.jsx",
 	},
 	callback = function()
+		if vim.bo.filetype == "python" then
+			vim.lsp.buf.code_action({
+				context = {
+					only = { "source.fixAll.ruff" },
+				},
+				apply = true,
+			})
+			vim.lsp.buf.code_action({
+				context = {
+					only = { "source.organizeImports.ruff" },
+				},
+				apply = true,
+			})
+		end
 		vim.lsp.buf.format({ async = false })
+	end,
+})
+-- tabwidth dynamic
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = {
+		"c",
+		"cpp",
+		"h",
+		"hpp",
+		"lua",
+		"javascript",
+		"typescript",
+		"html",
+		"css",
+		"json",
+		"jsonc",
+		"markdown",
+		"mdx",
+	},
+	callback = function()
+		vim.bo.tabstop = 2
+		vim.bo.shiftwidth = 2
+		vim.bo.expandtab = true
 	end,
 })
 

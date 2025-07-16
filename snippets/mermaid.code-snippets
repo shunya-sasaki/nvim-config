@@ -1,12 +1,12 @@
 {
   "Mermaid Flowchart Block": {
     "prefix": "mmd-flowchart",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "body": ["```mermaid", "flowchart TD", "```"]
   },
   "Mermaid.js Flowchart": {
     "prefix": "mmd-flowchart-config",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Mermaid.js Flowchart",
     "body": [
       "---",
@@ -38,349 +38,349 @@
   },
   "Flowchart Card (Nothced Rectangle)": {
     "prefix": "mmd-flowchart-node-card",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Represent a card",
     "body": "${1:var}@{shape: notch-rect, label: \"\"}"
   },
   "Flowchart Collate (Hourglass)": {
     "prefix": "mmd-flowchart-node-collate",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Represent a collate operation",
     "body": "${1:var}@{shape: hourglass, label: \"\"}"
   },
   "Flowchart Com Link (Lightning Bolt)": {
     "prefix": "mmd-flowchart-node-bolt",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Communication link",
     "body": "${1:var}@{shape: bolt, label: \"\"}"
   },
   "Flowchart Comment (Curly Brace)": {
     "prefix": "mmd-flowchart-node-brace",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Adds a comment",
     "body": "${1:var}@{shape: brace, label: \"\"}"
   },
   "Flowchart Comment Right (Curly Brace)": {
     "prefix": "mmd-flowchart-node-brace-r",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Adds a comment",
     "body": "${1:var}@{shape: brace-r, label: \"\"}"
   },
   "Flowchart Comment with braces on both sides (Curly Braces)": {
     "prefix": "mmd-flowchart-node-braces",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Adds a comment",
     "body": "${1:var}@{shape: braces, label: \"\"}"
   },
   "Flowchart Data Input/Output (Lean Right)": {
     "prefix": "mmd-flowchart-node-lean-r",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Represents input or output",
     "body": "${1:var}@{shape: lean-r, label: \"\"}"
   },
   "Flowchart Data Input/Output (Lean Left)": {
     "prefix": "mmd-flowchart-node-lean-l",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Represents input or output",
     "body": "${1:var}@{shape: lean-l, label: \"\"}"
   },
   "Flowchart Database (Cylinder)": {
     "prefix": "mmd-flowchart-node-cyl",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Database storage",
     "body": "${1:var}@{shape: cyl, label: \"\"}"
   },
   "Flowchart Decision (Diamond)": {
     "prefix": "mmd-flowchart-node-diam",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Decision-making step",
     "body": "${1:var}@{shape: diam, label: \"\"}"
   },
   "Flowchart Delay (Half-Rounded Rectangle)": {
     "prefix": "mmd-flowchart-node-delay",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Represents a delay",
     "body": "${1:var}@{shape: delay, label: \"\"}"
   },
   "Flowchart Direct Access Storage (Horizontal Cylinder)": {
     "prefix": "mmd-flowchart-node-h-cyl",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Direct access stroage",
     "body": "${1:var}@{shape: h-cyl, label: \"\"}"
   },
   "Flowchart Disk Storage (Lined Cylinder)": {
     "prefix": "mmd-flowchart-node-lin-cyl",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Disk storage",
     "body": "${1:var}@{shape: lin-cyl, label: \"\"}"
   },
   "Flowchart Display (Curved Trapezoid)": {
     "prefix": "mmd-flowchart-node-curv-trap",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Represents a display",
     "body": "${1:var}@{shape: curv-trap, label: \"\"}"
   },
   "Flowchart Divided Process (Divided Rectangle)": {
     "prefix": "mmd-flowchart-node-div-rect",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Divided process shape",
     "body": "${1:var}@{shape: div-rect, label: \"\"}"
   },
   "Flowchart Document (Document)": {
     "prefix": "mmd-flowchart-node-doc",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Represents a dcoument",
     "body": "${1:var}@{shape: doc, label: \"\"}"
   },
   "Flowchart Event (Rounded Rectangle)": {
     "prefix": "mmd-flowchart-node-rounded",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Represents an event",
     "body": "${1:var}@{shape: rounded, label: \"\"}"
   },
   "Flowchart Extract (Triangle)": {
     "prefix": "mmd-flowchart-node-tri",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Extraction process",
     "body": "${1:var}@{shape: tri, label: \"\"}"
   },
   "Flowchart Fork/Join (Filled Rectangle)": {
     "prefix": "mmd-flowchart-node-fork",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Fork or join in process flow",
     "body": "${1:var}@{shape: fork, label: \"\"}"
   },
   "Flowchart Internal Storage (Window Pane)": {
     "prefix": "mmd-flowchart-node-win-pane",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Internal storage",
     "body": "${1:var}@{shape: win-pane, label: \"\"}"
   },
   "Flowchart Junction (Filled Circle)": {
     "prefix": "mmd-flowchart-node-f-circ",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Junction point",
     "body": "${1:var}@{shape: f-circ, label: \"\"}"
   },
   "Flowchart Lined Document (Lined Document)": {
     "prefix": "mmd-flowchart-node-lin-doc",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Lined document",
     "body": "${1:var}@{shape: lin-doc, label: \"\"}"
   },
   "Flowchart Lined/Shaded Process (Lined Rectangle)": {
     "prefix": "mmd-flowchart-node-lin-rect",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Lined process shape",
     "body": "${1:var}@{shape: lin-rect, label: \"\"}"
   },
   "Flowchart Loop Limit (Trapezoidal Pentagon)": {
     "prefix": "mmd-flowchart-node-notch-pent",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Loop limit step",
     "body": "${1:var}@{shape: notch-pent, label: \"\"}"
   },
   "Flowchart Manual File (Flipped Triangle)": {
     "prefix": "mmd-flowchart-node-frip-tri",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Manual file operation",
     "body": "${1:var}@{shape: flip-tri, label: \"\"}"
   },
   "Flowchart Manual Input (Sloped Rectangle)": {
     "prefix": "mmd-flowchart-node-sl-rect",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Manual inpt step",
     "body": "${1:var}@{shape: sl-rect, label: \"\"}"
   },
   "Flowchart Manual Operation (Trapezoid Base Top)": {
     "prefix": "mmd-flowchart-node-trap-t",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Represents a manual task",
     "body": "${1:var}@{shape: trap-t, label: \"\"}"
   },
   "Flowchart Multi-Document (Stacked Document)": {
     "prefix": "mmd-flowchart-node-docs",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Multiple documents",
     "body": "${1:var}@{shape: docs, label: \"\"}"
   },
   "Flowchart Multi-Process (Stacked Rectangle)": {
     "prefix": "mmd-flowchart-node-st-rect",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Multiple processes",
     "body": "${1:var}@{shape: st-rect, label: \"\"}"
   },
   "Flowchart Odd (Odd)": {
     "prefix": "mmd-flowchart-node-odd",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Odd shape",
     "body": "${1:var}@{shape: odd, label: \"\"}"
   },
   "Flowchart Paper Tape (Flag)": {
     "prefix": "mmd-flowchart-node-flag",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Paper tape",
     "body": "${1:var}@{shape: flag, label: \"\"}"
   },
   "Flowchart Prepare Conditional (Hexagon)": {
     "prefix": "mmd-flowchart-node-hex",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Preparation or condition step",
     "body": "${1:var}@{shape: hex, label: \"\"}"
   },
   "Flowchart Priority Action (Trapezoid Base Bottom)": {
     "prefix": "mmd-flowchart-node-trap-b",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Priority action",
     "body": "${1:var}@{shape: trap-b, label: \"\"}"
   },
   "Flowchart Process (Rectangle)": {
     "prefix": "mmd-flowchart-node-rect",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Standard process shape",
     "body": "${1:var}@{shape: rect, label: \"\"}"
   },
   "Flowchart Start (Circle)": {
     "prefix": "mmd-flowchart-node-circle",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Starting point",
     "body": "${1:var}@{shape: circle, label: \"\"}"
   },
   "Flowchart Start (Small Circle)": {
     "prefix": "mmd-flowchart-node-sm-circ",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Small starting point",
     "body": "${1:var}@{shape: sm-circ, label: \"\"}"
   },
   "Flowchart Stop (Double Circle)": {
     "prefix": "mmd-flowchart-node-dbl-circ",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Represents a stop point",
     "body": "${1:var}@{shape: dbl-circ, label: \"\"}"
   },
   "Flowchart Stop (Framed Circle)": {
     "prefix": "mmd-flowchart-node-fr-circ",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Stop point",
     "body": "${1:var}@{shape: fr-circ, label: \"\"}"
   },
   "Flowchart Stored Data (Bow Tie Rectangle)": {
     "prefix": "mmd-flowchart-node-bow-rect",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Stored data",
     "body": "${1:var}@{shape: bow-rect, label: \"\"}"
   },
   "Flowchart Subprocess (Framed Rectangle)": {
     "prefix": "mmd-flowchart-node-fr-rect",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Subprocess",
     "body": "${1:var}@{shape: fr-rect, label: \"\"}"
   },
   "Flowchart Summary (Crossed Circle)": {
     "prefix": "mmd-flowchart-node-cross-circ",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Summary",
     "body": "${1:var}@{shape: cross-circ, label: \"\"}"
   },
   "Flowchart Tagged Document (Tagged Document)": {
     "prefix": "mmd-flowchart-node-tag-doc",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Tagged document",
     "body": "${1:var}@{shape: tag-doc, label: \"\"}"
   },
   "Flowchart Tagged Process (Tagged Rectangle)": {
     "prefix": "mmd-flowchart-node-tag-rect",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Tagged process",
     "body": "${1:var}@{shape: tag-rect, label: \"\"}"
   },
   "Flowchart Terminal Point (Stadium)": {
     "prefix": "mmd-flowchart-node-stadium",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Terminal point",
     "body": "${1:var}@{shape: stadium, label: \"\"}"
   },
   "Flowchart Text Block (Text Block)": {
     "prefix": "mmd-flowchart-node-text",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Text block",
     "body": "${1:var}@{shape: text, label: \"\"}"
   },
   "Flowchart Icon (Icon Shape)": {
     "prefix": "mmd-flowchart-node-icon",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Text block",
     "body": "${1:var}@{icon: \"fa:${2: icon}\", from: \"${3|square,circle,rounded|}\", label: \"\", pos \"t\", h: ${4: height}}"
   },
   "Flowchart Image (Image Shape)": {
     "prefix": "mmd-flowchart-node-image",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Image shape",
     "body": "${1:var}@{img: \"\", label: \"\", pos \"${2|t,b|}\", w: ${3: width}, h: ${4: height}, constraint: \"${5|on,off|}\"}"
   },
   "Mermaid Sequence Diagrams Block": {
     "prefix": "mmd-sequence",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "body": ["```mermaid", "sequenceDiagram", "```"]
   },
   "Mermaid Sequence Participant": {
     "prefix": "mmd-sequence-participant",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "body": "participant ${1: var} as ${2: name}"
   },
   "Mermaid Sequence Actor": {
     "prefix": "mmd-sequence-group",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "body": ["box ${1: group_name}", "", "end"]
   },
   "Mermaid Sequence Create": {
     "prefix": "mmd-sequence-create-participant",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "body": "create ${1|participant,actor|} ${2: var} as ${3: name}"
   },
   "Mermaid Sequence Destroy": {
     "prefix": "mmd-sequence-create-participant",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "body": "create ${1: var}"
   },
   "Mermaid Sequence Group": {
     "prefix": "mmd-sequence-create-participant",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "body": "create ${1: var}"
   },
   "Mermaid Sequence Message": {
     "prefix": "mmd-sequence-message",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Sequence message",
     "body": "${1:actor} ${2|->,-->,->>,-->>,<<->>,<<-->>,-x,--x,-),--)|}: ${3:message}"
   },
   "Mermaid Sequence Activate": {
     "prefix": "mmd-sequence-activate",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Activate a pariticipant or an actor",
     "body": "activate ${1: var}"
   },
   "Mermaid Sequence Deactivate": {
     "prefix": "mmd-sequence-deactivate",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Deactivate a pariticipant or an actor",
     "body": "deactivate ${1: var}"
   },
   "Mermaid Sequence Note": {
     "prefix": "mmd-sequence-note",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Add a note to a sequence diagram",
     "body": "Note ${1|right of,left of,over|} ${2: var}: ${3: text}"
   },
   "Mermaid Sequence Loop": {
     "prefix": "mmd-sequence-loop",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Add a loop block to a sequence diagram",
     "body": ["loop ${1: block_name}", "", "end"]
   },
   "Mermaid Sequence Alt": {
     "prefix": "mmd-sequence-alt",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Add a alt block to a sequence diagram",
     "body": [
       "alt ${1: block_name}",
@@ -392,13 +392,13 @@
   },
   "Mermaid Sequence Parallel": {
     "prefix": "mmd-sequence-parllel",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Add a parallel block to a sequence diagram",
     "body": ["par ${1: block_name}", "", "and ${2: else block_name}", "", "end"]
   },
   "Mermaid Sequence Critical": {
     "prefix": "mmd-sequence-parllel",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Add a critical block to a sequence diagram",
     "body": [
       "critical ${1: block_name}",
@@ -410,13 +410,13 @@
   },
   "Mermaid Sequence Break": {
     "prefix": "mmd-sequence-parllel",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Add a break block to a sequence diagram",
     "body": ["break ${1: block_name}", "", "end"]
   },
   "Mermaid Sequence Background Highlighting": {
     "prefix": "mmd-sequence-parllel",
-    "scope": "markdown, mdx, javascript, typescript",
+    "scope": "markdown,mdx,javascript,typescript",
     "description": "Hightlight flows by providing colored background rect",
     "body": ["rect ${1: color}", "", "end"]
   }
