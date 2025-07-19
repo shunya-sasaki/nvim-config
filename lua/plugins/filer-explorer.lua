@@ -17,7 +17,7 @@ return {
 				["<C-f>"] = { "scroll_preview", config = { direction = -10 } },
 			},
 		}
-		vim.keymap.set("n", "<LEADER>b", ":Neotree toggle position=float<CR>", { silent = true })
+		vim.keymap.set("n", "<C-b>", ":Neotree toggle position=float<CR>", { silent = true })
 		vim.cmd([[cab nt Neotree]])
 		vim.cmd([[cab ntf Neotree float]])
 		vim.cmd([[cab ntb Neotree buffers]])
