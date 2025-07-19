@@ -101,9 +101,10 @@ git config --global commit.verbose true
 | Normal   | \<Leader\>fb          | Buffers                                | telescope.nvim |
 | Normal   | \<Leader\>fh          | Help tags                              | telescope.nvim |
 | Normal   | \<Leader\>\<Leader\>s | Hint char1                             | hop.nvim       |
-| Normal   | \<C-b\>               | Toggle Fern buffer                     | fern.vim       |
+| Normal   | \<C-b\>               | Toggle Neotree buffer                  | neto-tree.nvim |
 | Normal   | \<Leader\>g           | Run lazygit on floating terminal       | toggleterm     |
 | Normal   | \<C-t\>               | Open a floating terminal               | toggleterm     |
+| Normal   | \<Leader\>cc          | Toggle Codecomapnion chat              | codecompanion  |
 
 ## User configuration
 

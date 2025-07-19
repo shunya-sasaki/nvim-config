@@ -1,0 +1,26 @@
+return {
+	"nvim-neo-tree/neo-tree.nvim",
+	branch = "v3.x",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		"nvim-tree/nvim-web-devicons",
+		"MunifTanjim/nui.nvim",
+		{ "3rd/image.nvim", opts = {} },
+	},
+	laxy = false,
+	opts = function(opts, _)
+		opts.window = {
+			mappings = {
+				["P"] = { "toggle_preview", config = { use_float = false, use_image_nvim = true } },
+				["l"] = "focus_preview",
+				["<C-b>"] = { "scroll_preview", config = { direction = 10 } },
+				["<C-f>"] = { "scroll_preview", config = { direction = -10 } },
+			},
+		}
+		vim.keymap.set("n", "<LEADER>b", ":Neotree toggle position=float<CR>", { silent = true })
+		vim.cmd([[cab nt Neotree]])
+		vim.cmd([[cab ntf Neotree float]])
+		vim.cmd([[cab ntb Neotree buffers]])
+		vim.cmd([[cab ntg Neotree git_status]])
+	end,
+}
