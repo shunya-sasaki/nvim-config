@@ -82,6 +82,17 @@ vim.keymap.set("n", "gd", "<C-]>", { noremap = true, silent = true })
 vim.keymap.set("n", "gr", vim.lsp.buf.rename, { noremap = true, silent = true })
 -- hover & scroll
 vim.keymap.set("n", "gh", vim.lsp.buf.hover, { noremap = true, silent = true })
+-- filetype
+vim.filetype.add({
+	pattern = {
+		[".*/.flake8"] = "ini",
+	},
+	extension = {
+		["code-snippets"] = "json",
+		mdx = "markdown",
+		razor = "razor",
+	},
+})
 -- auto format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = {

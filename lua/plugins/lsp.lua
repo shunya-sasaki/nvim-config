@@ -26,7 +26,7 @@ return {
 				"taplo",
 				"pyright",
 				"ruff",
-				"pyrefly",
+				"ty",
 				"ts_ls",
 				"tailwindcss",
 				"cssls",
