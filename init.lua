@@ -71,11 +71,20 @@ vim.api.nvim_create_user_command(
 	":e " .. vim.fn.stdpath("config") .. "/lua/local/plugins/user_plugins.lua",
 	{}
 )
-vim.api.nvim_create_autocmd("CursorHold", {
-	callback = function()
-		vim.diagnostic.open_float(nil, { focus = false })
-	end,
-})
+vim.keymap.set("n", "<Leader>x", function()
+	vim.diagnostic.open_float({
+		focusable = false,
+		close_events = {
+			"CursorMoved",
+			"CursorMovedI",
+			"InsertEnter",
+			"BufHidden",
+			"InsertCharPre",
+			"WinLeave",
+		},
+	})
+end, { noremap = true, silent = true })
+
 -- goto definition
 vim.keymap.set("n", "gd", "<C-]>", { noremap = true, silent = true })
 -- rename

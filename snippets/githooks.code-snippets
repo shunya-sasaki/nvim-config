@@ -1,0 +1,25 @@
+{
+  "pre-push": {
+    "prefix": "pre-push",
+    "scope": "sh,zsh,text",
+    "description": "Template for a pre-push Git hook script.",
+    "body": [
+      "#!/bin/sh",
+      "set -e",
+      "while read local_ref local_sha remote_ref remote_sha; do",
+      "    branch_name=$(echo\"$$local_ref\" | sed \u0027s/refs\\/heads\\///\u0027)",
+      "done",
+      "",
+      "if [ \"$$branch_name\" = \"main\" ]; then",
+      "    echo \"Pushing to main branch with normal push is not allowed!\" \u003e\u00262",
+      "    echo \"Please use the command \\`${1:release-command}\\` to push changes!!\" \u003e\u00262",
+      "    exit 1",
+      "elif [ \"$$branch_name\" = \"\"]; then",
+      "    echo \"No changes pushed.\"",
+      "else",
+      "    echo \"Nothing to do for pre-push.\"",
+      "fi",
+      "exit 0"
+    ]
+  }
+}

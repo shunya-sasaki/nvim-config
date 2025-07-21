@@ -3,6 +3,10 @@
   "contributes": {
     "snippets": [
       {
+        "language": "sh,text,zsh",
+        "path": "./githooks.code-snippets"
+      },
+      {
         "language": "markdown",
         "path": "./readme.code-snippets"
       },
@@ -11,12 +15,20 @@
         "path": "./pyproject.code-snippets"
       },
       {
-        "language": "ignore",
+        "language": "python",
+        "path": "./pylogger.code-snippets"
+      },
+      {
+        "language": "gitignore",
         "path": "./gitignore.code-snippets"
       },
       {
         "language": "text",
         "path": "./mit.code-snippets"
+      },
+      {
+        "language": "ini",
+        "path": "./pyflake8.code-snippets"
       },
       {
         "language": "all",
@@ -27,7 +39,7 @@
         "path": "./sphinx.code-snippets"
       },
       {
-        "language": "markdown,mdx,javascript,typescript",
+        "language": "javascript,mdx,markdown,typescript",
         "path": "./mermaid.code-snippets"
       }
     ]

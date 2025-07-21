@@ -1,0 +1,8 @@
+{
+  "Flake8 rules": {
+    "prefix": "flake8",
+    "scope": "ini",
+    "description": "Flake8 rules that should be written in the .flake8 file.",
+    "body": ["[flake8]", "extend-ignore = W503"]
+  }
+}
