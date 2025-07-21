@@ -178,29 +178,4 @@ local local_init = vim.fn.stdpath("config") .. "/lua/local/user_init.lua"
 if vim.loop.fs_stat(local_init) then
 	require("local.user_init")
 end
-
--- lazy.nvim
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-	vim.fn.system({
-		"git",
-		"clone",
-		"--filter=blob:none",
-		"https://github.com/folke/lazy.nvim.git",
-		"--branch=stable", -- latest stable release
-		lazypath,
-	})
-end
-vim.opt.rtp:prepend(lazypath)
-
-local specs = {
-	{ import = "plugins" },
-}
-
-local local_dir = vim.fn.stdpath("config") .. "/lua/local/plugins"
-local has_local = vim.fn.isdirectory(local_dir) == 1 and #vim.fn.globpath(local_dir, "*.lua", false, true) > 0
-if has_local then
-	table.insert(specs, { import = "local.plugins" })
-end
-
-require("lazy").setup(specs)
+require("config.lazy")
