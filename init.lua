@@ -124,12 +124,6 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 		if vim.bo.filetype == "python" then
 			vim.lsp.buf.code_action({
 				context = {
-					only = { "source.fixAll.ruff" },
-				},
-				apply = true,
-			})
-			vim.lsp.buf.code_action({
-				context = {
 					only = { "source.organizeImports.ruff" },
 				},
 				apply = true,

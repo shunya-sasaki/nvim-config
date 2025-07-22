@@ -3,7 +3,7 @@
   "contributes": {
     "snippets": [
       {
-        "language": "sh,text,zsh",
+        "language": "text,sh,zsh",
         "path": "./githooks.code-snippets"
       },
       {
@@ -19,8 +19,16 @@
         "path": "./pylogger.code-snippets"
       },
       {
+        "language": "python",
+        "path": "./pyfastapi.code-snippets"
+      },
+      {
         "language": "gitignore",
         "path": "./gitignore.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./pyutils.code-snippets"
       },
       {
         "language": "text",
@@ -39,7 +47,7 @@
         "path": "./sphinx.code-snippets"
       },
       {
-        "language": "javascript,mdx,markdown,typescript",
+        "language": "typescript,markdown,javascript,mdx",
         "path": "./mermaid.code-snippets"
       }
     ]
