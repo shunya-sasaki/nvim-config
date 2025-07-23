@@ -12,6 +12,7 @@ return {
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"nvim-treesitter/nvim-treesitter",
+			"rcarriga/nvim-notify",
 			"nvim-lualine/lualine.nvim",
 			{
 				"echasnovski/mini.diff",
@@ -191,6 +192,73 @@ return {
 					},
 				},
 			}
+			-- hooks
+			local spinner_symbols = {
+				"⠋",
+				"⠙",
+				"⠹",
+				"⠸",
+				"⠼",
+				"⠴",
+				"⠦",
+				"⠧",
+				"⠇",
+				"⠏",
+			}
+			local group = vim.api.nvim_create_augroup("CodeCompanionNotify", {})
+			local notify = require("notify")
+			local request_notify = nil
+			local notify_title = "CodeCompanion"
+			local timer = vim.loop.new_timer()
+			local spinner_symbols_len = 10
+			local i_spinner = 1
+			vim.api.nvim_create_autocmd({ "User" }, {
+				pattern = "CodeCompanion*",
+				group = group,
+				callback = function(request)
+					-- Notify when CodeCompanion request starts.
+					local function start_request()
+						request_notify = notify(" CodeCompanion Request Started", "info", {
+							title = notify_title,
+							timeout = false,
+						})
+						timer:start(
+							0,
+							50,
+							vim.schedule_wrap(function()
+								if not request_notify then
+									timer:stop()
+									return
+								end
+								i_spinner = (i_spinner % #spinner_symbols) + 1
+								request_notify = notify(
+									" " .. spinner_symbols[i_spinner] .. " CodeCompanion Processing...",
+									"info",
+									{
+										title = notify_title,
+										replace = request_notify,
+										timeout = false,
+									}
+								)
+							end)
+						)
+					end
+					local function finish_request()
+						notify(" CodeCompanion Request Finished", "info", {
+							title = notify_title,
+							replace = request_notify,
+							timeout = 5000,
+						})
+						request_notify = nil
+					end
+					local notify = require("notify")
+					if request.match == "CodeCompanionRequestStarted" then
+						start_request()
+					elseif request.match == "CodeCompanionRequestFinished" then
+						finish_request()
+					end
+				end,
+			})
 		end,
 	},
 }
