@@ -88,23 +88,36 @@ git config --global commit.verbose true
 
 ## Shortcut keys and commands
 
-| Mode     | Key and command       | Description                            | Plugin         |
-| -------- | --------------------- | -------------------------------------- | -------------- |
-| -        | \<Space\>             | Leader key                             | -              |
-| Normal   | Y                     | Yank line                              | -              |
-| Normal   | \<C-n\>               | Go to next buffer                      | -              |
-| Normal   | \<C-p\>               | Go to previous buffer                  | -              |
-| Normal   | \<Esc\>\<Esc\>        | Stop the hilighting for the `hlsearch` | -              |
-| Terminal | \<Esc\>\<Esc\>        | Return to Normal mode                  | -              |
-| Normal   | \<Leader\>ff          | Find files                             | telescope.nvim |
-| Normal   | \<Leader\>fg          | Live grep                              | telescope.nvim |
-| Normal   | \<Leader\>fb          | Buffers                                | telescope.nvim |
-| Normal   | \<Leader\>fh          | Help tags                              | telescope.nvim |
-| Normal   | \<Leader\>\<Leader\>s | Hint char1                             | hop.nvim       |
-| Normal   | \<C-b\>               | Toggle Neotree buffer                  | neto-tree.nvim |
-| Normal   | \<Leader\>g           | Run lazygit on floating terminal       | toggleterm     |
-| Normal   | \<C-t\>               | Open a floating terminal               | toggleterm     |
-| Normal   | \<Leader\>cc          | Toggle Codecomapnion chat              | codecompanion  |
+| Mode          | Key and command       | Description                            | Plugin         |
+| ------------- | --------------------- | -------------------------------------- | -------------- |
+| -             | \<Space\>             | Leader key                             | -              |
+| Normal        | Y                     | Yank line                              | -              |
+| Normal        | \<C-n\>               | Go to next buffer                      | -              |
+| Normal        | \<C-p\>               | Go to previous buffer                  | -              |
+| Normal        | \<Esc\>\<Esc\>        | Stop the hilighting for the `hlsearch` | -              |
+| Terminal      | \<Esc\>\<Esc\>        | Return to Normal mode                  | -              |
+| Normal        | \<Leader\>ff          | Find files                             | telescope.nvim |
+| Normal        | \<Leader\>fg          | Live grep                              | telescope.nvim |
+| Normal        | \<Leader\>fb          | Buffers                                | telescope.nvim |
+| Normal        | \<Leader\>fh          | Help tags                              | telescope.nvim |
+| Normal        | \<Leader\>\<Leader\>s | Hint char1                             | hop.nvim       |
+| Normal        | \<Leader\>e           | Toggle Neotree buffer                  | neto-tree.nvim |
+| Normal        | \<Leader\>g           | Run lazygit on floating terminal       | toggleterm     |
+| Normal        | \<C-t\>               | Open a floating terminal               | toggleterm     |
+| Normal        | \<Leader\>cc          | Toggle Codecomapnion chat              | codecompanion  |
+| Normal        | \<F5\>                | Debug continue                         | nvim-dap       |
+| Normal        | \<F10\>               | Debug step over                        | nvim-dap       |
+| Normal        | \<F11\>               | Debug step into                        | nvim-dap       |
+| Normal        | \<F12\>               | Debug step out                         | nvim-dap       |
+| Normal        | \<Leader\>b           | Debug toggle breakpoint                | nvim-dap       |
+| Normal        | \<Leader\>B           | Debug set breakpoint                   | nvim-dap       |
+| Normal        | \<Leader\>lp          | Debug set breakpoint (log point)       | nvim-dap       |
+| Normal        | \<Leader\>dr          | Debug repl open                        | nvim-dap       |
+| Normal        | \<Leader\>dl          | Debug run last                         | nvim-dap       |
+| Normal/Visual | \<Leader\>dh          | Debug hover                            | nvim-dap       |
+| Normal/Visual | \<Leader\>dp          | Debug preview                          | nvim-dap       |
+| Normal/Visual | \<Leader\>df          | Debug centered float frames            | nvim-dap       |
+| Normal/Visual | \<Leader\>ds          | Debug centered float scopes            | nvim-dap       |
 
 ## User configuration
 
