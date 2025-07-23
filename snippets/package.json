@@ -3,7 +3,7 @@
   "contributes": {
     "snippets": [
       {
-        "language": "text,sh,zsh",
+        "language": "sh,text,zsh",
         "path": "./githooks.code-snippets"
       },
       {
@@ -17,6 +17,10 @@
       {
         "language": "python",
         "path": "./pylogger.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./py-git-version.code-snippets"
       },
       {
         "language": "python",
@@ -47,7 +51,7 @@
         "path": "./sphinx.code-snippets"
       },
       {
-        "language": "typescript,markdown,javascript,mdx",
+        "language": "typescript,javascript,mdx,markdown",
         "path": "./mermaid.code-snippets"
       }
     ]
