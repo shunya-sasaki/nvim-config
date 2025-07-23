@@ -3,7 +3,7 @@
   "contributes": {
     "snippets": [
       {
-        "language": "sh,text,zsh",
+        "language": "sh,zsh,text",
         "path": "./githooks.code-snippets"
       },
       {
@@ -47,11 +47,15 @@
         "path": "./color-code.code-snippets"
       },
       {
+        "language": "json",
+        "path": "./codecompanion.code-snippets"
+      },
+      {
         "language": "python",
         "path": "./sphinx.code-snippets"
       },
       {
-        "language": "typescript,javascript,mdx,markdown",
+        "language": "javascript,mdx,markdown,typescript",
         "path": "./mermaid.code-snippets"
       }
     ]

@@ -1,0 +1,37 @@
+{
+    "codecompanion-workspace": {
+        "prefix": "codecompanion-workspace",
+        "scope": "json",
+        "description": "Template for `codecompanion-workspace.json`",
+        "body": [
+            "{",
+            "  \"name\": \"${1:project_name}\",",
+            "  \"version\": \"1.0.0\",",
+            "  \"description\": \"A workspace for Code Companion development\",",
+            "  \"system_prompt\": \"Your are a helpful AI assistant. Your nickname is Chappie.\",",
+            "  \"groups\": [",
+            "    {",
+            "      \"name\": \"Default Group\",",
+            "      \"system_prompt\": \"You are an assistant dedicated to ${group_name}. Group system prompt. This is used to set the context for the group.\",",
+            "      \"data\": [\"readme\", \"google-python-style-guide\"]",
+            "    }",
+            "  ],",
+            "  \"data\": {",
+            "    \"readme\": {",
+            "      \"type\": \"file\",",
+            "      \"path\": \"README.md\",",
+            "      \"description\": \"This `${filename}` file is used to provide an overview of the project.\"",
+            "    },",
+            "    \"google-python-style-guide\": {",
+            "      \"type\": \"url\",",
+            "      \"path\": \"https://google.github.io/styleguide/pyguide.html\",",
+            "      \"description\": \"This is the Google Python Style Guide.\",",
+            "      \"opts\": {",
+            "        \"auto_restore_cache\": true",
+            "      }",
+            "    }",
+            "  }",
+            "}"
+        ]
+    }
+}
