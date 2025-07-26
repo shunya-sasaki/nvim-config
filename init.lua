@@ -65,6 +65,10 @@ vim.keymap.set("n", "<C-p>", ":bp<CR>", { silent = true })
 vim.keymap.set("n", "<Esc><Esc>", ":nohlsearch<CR>", { silent = true })
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-N>", { noremap = true, silent = true })
 -- custom commands
+vim.api.nvim_create_user_command("CloseAllNotify", function()
+	require("notify").dismiss({ silent = true, pending = true })
+end, { desc = "Close all notifications" })
+vim.cmd([[cab can CloseAllNotify]])
 vim.api.nvim_create_user_command("ConfigUserInit", ":e " .. vim.fn.stdpath("config") .. "/lua/local/user_init.lua", {})
 vim.api.nvim_create_user_command(
 	"ConfigUserPlugins",
