@@ -1,11 +1,24 @@
 return {
 	{
-		"github/copilot.vim",
-		config = function()
-			vim.g.copilot_filetypes = {
-				["gitcommit"] = true,
-			}
-		end,
+		"zbirenbaum/copilot.lua",
+		cmd = "Copilot",
+		event = "InsertEnter",
+		opts = {
+			suggestion = {
+				enabled = false,
+			},
+			panel = {
+				enabled = false,
+			},
+		},
+	},
+	{
+		"zbirenbaum/copilot-cmp",
+		dependencies = {
+			"zbirenbaum/copilot.lua",
+			"hrsh7th/nvim-cmp",
+		},
+		opts = {},
 	},
 	{
 		"olimorris/codecompanion.nvim",
