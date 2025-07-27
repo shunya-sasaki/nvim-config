@@ -66,8 +66,13 @@ return {
 			vim.keymap.set("n", "<Leader>cc", "<cmd>CodeCompanionChat Toggle<CR>", { noremap = true, silent = true })
 			vim.cmd([[cab cc CodeCompanion]])
 			vim.cmd([[cab ci CodeCompanion #{buffer}]])
+			vim.cmd([[cab ca CodeCompanionActions]])
 		end,
 		opts = function(_, opts)
+			opts.prompt_library = {
+				["Translate Buffer JP -> EN"] = require("workflows.buffer-translator").workflow("Japanese", "English"),
+				["Translate Buffer EN -> JP"] = require("workflows.buffer-translator").workflow("English", "Japanese"),
+			}
 			opts.display = {
 				chat = {
 					-- Change the default icons
