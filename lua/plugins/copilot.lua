@@ -70,10 +70,12 @@ return {
 			vim.cmd([[cab ca CodeCompanionActions]])
 		end,
 		opts = function(_, opts)
-			opts.prompt_library = {
+			local prompts = require("prompts.style-guide")
+			local workflows = {
 				["Translate Buffer JP -> EN"] = require("workflows.buffer-translator").workflow("Japanese", "English"),
 				["Translate Buffer EN -> JP"] = require("workflows.buffer-translator").workflow("English", "Japanese"),
 			}
+			opts.prompt_library = vim.tbl_deep_extend("force", prompts, workflows)
 			opts.display = {
 				chat = {
 					-- Change the default icons
