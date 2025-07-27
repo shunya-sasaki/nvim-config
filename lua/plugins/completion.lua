@@ -24,10 +24,15 @@ return {
 					local vscode_snippets_path = {
 						vim.fn.expand(vim.fn.stdpath("config") .. "/snippets"),
 					}
-					luasnip.setup(opts)
 					require("luasnip.loaders.from_vscode").load({
 						paths = vscode_snippets_path,
 					})
+					vim.keymap.set({ "i", "s" }, "<C-J>", function()
+						luasnip.jump(1)
+					end, { silent = true })
+					vim.keymap.set({ "i", "s" }, "<C-K>", function()
+						luasnip.jump(-1)
+					end, { silent = true })
 				end,
 			},
 		},
