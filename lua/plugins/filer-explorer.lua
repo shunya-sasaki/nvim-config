@@ -1,12 +1,16 @@
+local dependencies = {
+	"nvim-lua/plenary.nvim",
+	"nvim-tree/nvim-web-devicons",
+	"MunifTanjim/nui.nvim",
+}
+if (vim.fn.has("win32") == 0) and (vim.fn.has("win64") == 0) then
+	table.insert(dependencies, "3rd/image.nvim")
+end
+
 return {
 	"nvim-neo-tree/neo-tree.nvim",
 	branch = "v3.x",
-	dependencies = {
-		"nvim-lua/plenary.nvim",
-		"nvim-tree/nvim-web-devicons",
-		"MunifTanjim/nui.nvim",
-		{ "3rd/image.nvim", opts = {} },
-	},
+	dependencies = dependencies,
 	laxy = false,
 	opts = function(opts, _)
 		opts.window = {
