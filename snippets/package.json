@@ -3,60 +3,60 @@
   "contributes": {
     "snippets": [
       {
-        "language": "sh,zsh,text",
-        "path": "./githooks.code-snippets"
-      },
-      {
         "language": "markdown",
-        "path": "./readme.code-snippets"
+        "path": "./md-shields.code-snippets"
       },
       {
-        "language": "toml",
-        "path": "./pyproject.code-snippets"
-      },
-      {
-        "language": "python",
-        "path": "./pylogger.code-snippets"
+        "language": "text,zsh,sh",
+        "path": "./githooks.code-snippets"
       },
       {
         "language": "python",
         "path": "./py-git-version.code-snippets"
       },
       {
-        "language": "python",
-        "path": "./pyfastapi.code-snippets"
+        "language": "ini",
+        "path": "./py-flake8.code-snippets"
       },
       {
         "language": "gitignore",
         "path": "./gitignore.code-snippets"
       },
       {
-        "language": "python",
-        "path": "./pyutils.code-snippets"
-      },
-      {
         "language": "text",
         "path": "./mit.code-snippets"
       },
       {
-        "language": "ini",
-        "path": "./pyflake8.code-snippets"
+        "language": "python",
+        "path": "./py-fastapi.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./py-logger.code-snippets"
       },
       {
         "language": "all",
         "path": "./color-code.code-snippets"
       },
       {
+        "language": "javascript,typescript,mdx,markdown",
+        "path": "./mmd-mermaid.code-snippets"
+      },
+      {
+        "language": "markdown",
+        "path": "./md-readme.code-snippets"
+      },
+      {
         "language": "json",
         "path": "./codecompanion.code-snippets"
       },
       {
-        "language": "python",
-        "path": "./sphinx.code-snippets"
+        "language": "toml",
+        "path": "./py-project.code-snippets"
       },
       {
-        "language": "javascript,mdx,markdown,typescript",
-        "path": "./mermaid.code-snippets"
+        "language": "python",
+        "path": "./py-utils.code-snippets"
       }
     ]
   }

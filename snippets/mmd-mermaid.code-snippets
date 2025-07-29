@@ -36,7 +36,13 @@
       "```"
     ]
   },
-  "Flowchart Card (Nothced Rectangle)": {
+  "Flowchart Class Def": {
+    "prefix": "mmd-flowchart-class-def",
+    "scope": "markdown,mdx,javascript,typescript",
+    "description": "Flowchart Class Definition",
+    "body": "classDef ${1:className} stroke:${2:color},stroke-dasharray: 9,5,stroke-dashoffset: 900,animation: dash 25s linear infinite"
+  },
+  "Flowchart Card (Notched Rectangle)": {
     "prefix": "mmd-flowchart-node-card",
     "scope": "markdown,mdx,javascript,typescript",
     "description": "Represent a card",

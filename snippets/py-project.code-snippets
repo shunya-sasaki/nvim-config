@@ -1,6 +1,6 @@
 {
   "pyproject": {
-    "prefix": "pyproject",
+    "prefix": "py-pyproject",
     "description": "Snippet for pyproject",
     "scope": "toml",
     "body": [
