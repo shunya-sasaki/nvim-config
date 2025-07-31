@@ -1,0 +1,41 @@
+{
+	"Link to Iconify": {
+		"prefix": "md-link-iconify",
+		"scope": "markdown,html",
+		"description": [
+			"Link to Iconify for more icons.",
+			"https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"
+		],
+		"body": "<script src=\"https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js\"></script>"
+	},
+	"Insert Iconify Icon": {
+		"prefix": "md-iconify",
+		"scope": "markdown,html",
+		"description": "Insert an Iconify icon.",
+		"body": "<iconify-icon icon=\"${1:icon-name}\" style=\"vertical-align: middle;\"></iconify-icon>"
+	},
+	"Link to FontAwesome": {
+		"prefix": "md-link-fontawesome",
+		"scope": "markdown,html",
+		"description": "Link to FontAwesome for more icons.",
+		"body": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css\" integrity=\"sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />"
+	},
+	"Insert FontAwesome Icon": {
+		"prefix": "md-fontawesome",
+		"scope": "markdown,html",
+		"description": "Insert a FontAwesome icon.",
+		"body": "<i class=\"fa fa-${1:icon-name}\"></i>"
+	},
+	"Link to Devicon": {
+		"prefix": "md-link-devicon",
+		"scope": "markdown,html",
+		"description": "Link to Devicon for more icons.",
+		"body": "<link rel=\"stylesheet\" type='text/css' href=\"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css\"/>"
+	},
+	"Insert Devicon Icon": {
+		"prefix": "md-devicon",
+		"scope": "markdown,html",
+		"description": "Insert a Devicon icon.",
+		"body": "<i class=\"devicon-${1:icon-name}-plain\"></i>"
+	}
+}

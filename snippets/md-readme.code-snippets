@@ -1,36 +1,35 @@
 {
-  "README": {
-    "prefix": "md-readme",
-    "scope": "markdown",
-    "description": "Template of README.md",
-    "body": [
-      "# ${1: Project Title}",
-      "",
-      "## 📦 Requirements",
-      "",
-      "## ⚙️ Setup",
-      "",
-      "## 🚀 Usage",
-      "",
-      "## 📚 Reference",
-      "",
-      "## 📄 License",
-      "",
-      "## 🔗 Related Projects",
-      ""
-    ]
-
-  },
-  "Author": {
-    "prefix": "md-author",
-    "scope": "markdown",
-    "description": "Author for README.md",
-    "body": [
-      "## Author",
-      "",
-      "- ${1:Author Name}",
-      "  - Mail: [${2:author.email@example.com}](mailto:${2:author.email@example.com})",
-      "  - X: [@${3:AuthorX}](https://x.com/${3:AuthorX})"
-    ]
-  }
+	"README": {
+		"prefix": "md-readme",
+		"scope": "markdown",
+		"description": "Template of README.md",
+		"body": [
+			"# ${1: Project Title}",
+			"",
+			"## 📦 Requirements",
+			"",
+			"## ⚙️ Setup",
+			"",
+			"## 🚀 Usage",
+			"",
+			"## 📚 Reference",
+			"",
+			"## 📄 License",
+			"",
+			"## 🔗 Related Projects",
+			""
+		]
+	},
+	"Author": {
+		"prefix": "md-author",
+		"scope": "markdown",
+		"description": "Author for README.md",
+		"body": [
+			"## Author",
+			"",
+			"- ${1:Author Name}",
+			"  - Mail: [${2:author.email@example.com}](mailto:${2:author.email@example.com})",
+			"  - X: [@${3:AuthorX}](https://x.com/${3:AuthorX})"
+		]
+	}
 }
