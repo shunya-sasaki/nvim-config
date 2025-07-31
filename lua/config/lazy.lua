@@ -33,6 +33,7 @@ end
 
 require("lazy").setup({
 	spec = specs,
+	rocks = { hererocks = true },
 	install = { colorscheme = { "tokyonight" } },
 	checker = { enabled = true },
 })

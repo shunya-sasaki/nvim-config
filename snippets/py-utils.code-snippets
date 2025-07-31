@@ -3,7 +3,7 @@
         "prefix": "py-format-converter",
         "scope": "python",
         "description": "Class definition for FormatConverter.",
-        "body": [
+            "body": [
             "\"\"\"Utility for converting string formats.\"\"\"",
             "",
             "",

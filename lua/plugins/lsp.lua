@@ -27,6 +27,7 @@ return {
 				"pyright",
 				"ruff",
 				"ty",
+				"biome",
 				"ts_ls",
 				"tailwindcss",
 				"cssls",
@@ -46,6 +47,9 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.pyright.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.biome.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.ts_ls.setup({
@@ -98,7 +102,7 @@ return {
 				null_ls.builtins.formatting.csharpier.with({ filetypes = { "cs" } }),
 				null_ls.builtins.formatting.stylua.with({ filetypes = { "lua" } }),
 				null_ls.builtins.formatting.prettier.with({
-					filetypes = { "markdown", "html", "css", "javascript", "typescript", "json", "tsx", "jsx" },
+					filetypes = { "markdown", "html" },
 					extra_args = { "--ignore-path", ".prettierignore" },
 				}),
 			}
