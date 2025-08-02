@@ -31,7 +31,10 @@ return {
 			"nvim-treesitter/nvim-treesitter",
 			"rcarriga/nvim-notify",
 			"nvim-lualine/lualine.nvim",
-			"ravitemer/mcphub.nvim",
+			{
+				"ravitemer/mcphub.nvim",
+				build = "volta install mcp-hub@latest",
+			},
 			{
 				"echasnovski/mini.diff",
 				config = function()
@@ -49,9 +52,16 @@ return {
 			{
 				"MeanderingProgrammer/render-markdown.nvim",
 				ft = { "markdown", "codecompanion" },
-				opts = {
-					sign = { enabled = false },
-				},
+				opts = function(_, opts)
+					vim.cmd([[cab md :lua require('render-markdown').buf_toggle()]])
+					vim.api.nvim_create_autocmd("BufRead", {
+						pattern = "*.md",
+						callback = function()
+							require("render-markdown").buf_disable()
+						end,
+					})
+					sign = { enabled = false }
+				end,
 			},
 			{
 				"HakonHarnes/img-clip.nvim",
@@ -68,17 +78,19 @@ return {
 		},
 		init = function()
 			vim.keymap.set("n", "<Leader>cc", "<cmd>CodeCompanionChat Toggle<CR>", { noremap = true, silent = true })
+			vim.keymap.set("n", "<Leader>ca", "<cmd>CodeCompanionActions<CR>", { noremap = true, silent = true })
 			vim.cmd([[cab cc CodeCompanion]])
 			vim.cmd([[cab ci CodeCompanion #{buffer}]])
 			vim.cmd([[cab ca CodeCompanionActions]])
 		end,
 		opts = function(_, opts)
 			local prompts = require("prompts.style-guide")
+			local git_workflows = require("workflows.gitcommit")
 			local workflows = {
 				["Translate Buffer JP -> EN"] = require("workflows.buffer-translator").workflow("Japanese", "English"),
 				["Translate Buffer EN -> JP"] = require("workflows.buffer-translator").workflow("English", "Japanese"),
 			}
-			opts.prompt_library = vim.tbl_deep_extend("force", prompts, workflows)
+			opts.prompt_library = vim.tbl_deep_extend("force", prompts, git_workflows, workflows)
 			opts.display = {
 				chat = {
 					-- Change the default icons
@@ -122,22 +134,22 @@ return {
 						show_token_count = false, -- Show the token count for each response?
 						start_in_insert_mode = false, -- Open the chat buffer in insert mode?
 					},
-					diff = {
-						enabled = true,
-						close_chat_at = 240, -- Close an open chat buffer if the total columns of your display are less than...
-						layout = "vertical", -- vertical|horizontal split for default provider
-						opts = { "internal", "filler", "closeoff", "algorithm:patience", "followwrap", "linematch:120" },
-						provider = "mini_diff", -- default|mini_diff
-					},
-					action_palette = {
-						width = 95,
-						heihgt = 10,
-						prompt = "Prompt ",
-						provider = "default",
-						opts = {
-							show_default_actions = true,
-							show_default_prompt_library = true,
-						},
+				},
+				diff = {
+					enabled = true,
+					close_chat_at = 240, -- Close an open chat buffer if the total columns of your display are less than...
+					layout = "vertical", -- vertical|horizontal split for default provider
+					opts = { "internal", "filler", "closeoff", "algorithm:patience", "followwrap", "linematch:120" },
+					provider = "mini_diff", -- default|mini_diff
+				},
+				action_palette = {
+					-- width = 95,
+					height = 50,
+					prompt = "Prompt ",
+					-- provider = "default",
+					opts = {
+						show_default_actions = false,
+						show_default_prompt_library = true,
 					},
 				},
 				---Customize how tokens are displayed
@@ -231,7 +243,7 @@ return {
 				mcphub = {
 					callback = "mcphub.extensions.codecompanion",
 					opts = {
-						make_vars = true,
+						make_vars = false,
 						make_slash_commands = true,
 						show_result_in_chat = true,
 					},
@@ -239,6 +251,7 @@ return {
 				vectorcode = {
 					---@type VectorCode.CodeCompanion.ExtensionOpts
 					opts = {
+						make_vars = false,
 						tool_group = {
 							-- this will register a tool group called `@vectorcode_toolbox` that contains all 3 tools
 							enabled = true,
