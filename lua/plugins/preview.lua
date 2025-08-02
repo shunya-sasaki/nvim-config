@@ -9,9 +9,9 @@ return {
 				pattern = "^(###?)%s+(.+)$",
 			},
 			fences = {
-				enabled = false,
-				start_text = "mtoc-start",
-				end_text = "mtoc-end",
+				enabled = true,
+				start_text = "toc",
+				end_text = "/toc",
 			},
 			auto_update = true,
 			toc_list = {
