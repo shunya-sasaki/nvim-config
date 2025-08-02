@@ -4,3 +4,7 @@
 /lazy-lock.json
 !/lua/local/.gitkeep
 !/lua/local/plugins/.gitkeep
+/snippets/packages.json
+/snippets/.*.code-snippets
+/snippets/.*.json
+
