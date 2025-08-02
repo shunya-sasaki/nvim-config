@@ -1,0 +1,30 @@
+{
+	"Pydantic Data Model": {
+		"prefix": "py-data-model",
+		"scope": "python",
+		"description": "Pydantic data model with validation and serialization.",
+		"body": [
+			"\"\"\"This module define ${1:ModelClass}.\"\"\"",
+			"",
+			"from __future__ import annotations",
+			"",
+			"from pydantic import BaseModel",
+			"from pydantic import ConfigDict",
+			"",
+			"from ${2:package_name}.utils import FormatConverter",
+			"",
+			"",
+			"class ${1:ModelClass}(BaseModel):",
+			"    \"\"\"${1: ModelClass} data model.",
+			"",
+			"    Args:",
+			"",
+			"    \"\"\"",
+			"",
+			"    model_config = ConfigDict(",
+			"        alias_generator=FormatConverter.snake_to_camel, populate_by_name=True",
+			"    )",
+			""
+		]
+	}
+}
