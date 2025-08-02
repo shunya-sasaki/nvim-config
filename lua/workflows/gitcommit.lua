@@ -65,7 +65,7 @@ If it is not, rewrite the commit message to follow the format.
 				{
 					role = "user",
 					content = [[
-@{insert_edit_into_file} #{buffer} Insert messages to the top of the current buffer.
+Insert messages to the top of the current #{buffer} with @{insert_edit_into_file}.
 Insert only the git commit message, exclude all other text.
           ]],
 					opts = {
