@@ -2,22 +2,22 @@ GitCommit = {}
 
 function GitCommit.workflow()
 	return {
-		strategy = "workflow",
+		strategy = "inline",
 		description = "Create git commit message.",
 		opts = {
-			modes = { "n" },
+			modes = { "n", "v", "i" },
 			stop_context_insertion = true,
 			is_slash_cmd = true,
 			short_name = "gcm",
 			auto_submit = true,
+			placement = "add",
 		},
 		prompts = {
 			{
-				{
-					role = "system",
-					content = function()
-						vim.g.codecompanion_auto_tool_mode = true
-						return [[
+				role = "system",
+				content = function()
+					vim.g.codecompanion_auto_tool_mode = true
+					return [[
 You are an expert at following the Conventional Commit specification.
 Create a commit message based on the output of git diff.
 
@@ -43,37 +43,36 @@ The commit message must be structured as follows:
 - style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 - test: Adding missing tests or correcting existing tests
           ]]
-					end,
-					opts = { auto_submit = true },
-				},
-				{
-					role = "user",
-					content = [[
+				end,
+				opts = { auto_submit = true },
+			},
+			{
+				role = "user",
+				content = [[
 @{cmd_runner} run `git diff --cached` to get the output of git diff,
 and create git commit message from staged changes.
           ]],
-					opts = { auto_submit = true, stop_context_insertion = true, requires_approval = false },
-				},
-				{
-					role = "user",
-					content = [[
+				opts = { auto_submit = true, stop_context_insertion = true, requires_approval = false },
+			},
+			{
+				role = "user",
+				content = [[
 Check the git commit message is following with the Conventional Commit format.
 If it is not, rewrite the commit message to follow the format.
           ]],
-					opts = { auto_submit = true, stop_context_insertion = true, requires_approval = false },
-				},
-				{
-					role = "user",
-					content = [[
+				opts = { auto_submit = true, stop_context_insertion = true, requires_approval = false },
+			},
+			{
+				role = "user",
+				content = [[
 Insert messages to the top of the current #{buffer} with @{insert_edit_into_file}.
 Insert only the git commit message, exclude all other text.
           ]],
-					opts = {
-						auto_submit = true,
-						stop_context_insertion = true,
-						requires_approval = { buffer = true, file = false },
-						user_confirmation = false,
-					},
+				opts = {
+					auto_submit = true,
+					stop_context_insertion = true,
+					requires_approval = { buffer = true, file = false },
+					user_confirmation = false,
 				},
 			},
 		},
