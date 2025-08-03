@@ -1,6 +1,6 @@
 GitCommit = {}
 
-function GitCommit.workflow()
+function GitCommit.prompts()
 	return {
 		strategy = "inline",
 		description = "Create git commit message.",
@@ -11,6 +11,7 @@ function GitCommit.workflow()
 			short_name = "gcm",
 			auto_submit = true,
 			placement = "add",
+			ignore_system_prompt = true,
 		},
 		prompts = {
 			{
@@ -65,8 +66,7 @@ If it is not, rewrite the commit message to follow the format.
 			{
 				role = "user",
 				content = [[
-Insert messages to the top of the current #{buffer} with @{insert_edit_into_file}.
-Insert only the git commit message, exclude all other text.
+Insert the message at the top of the current #{buffer} using @{insert_edit_into_file}.
           ]],
 				opts = {
 					auto_submit = true,
@@ -80,7 +80,7 @@ Insert only the git commit message, exclude all other text.
 end
 
 local git_op_table = {
-	["Create git commit message"] = GitCommit.workflow(),
+	["Create git commit message"] = GitCommit.prompts(),
 }
 
 return git_op_table

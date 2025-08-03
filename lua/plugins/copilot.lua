@@ -85,7 +85,7 @@ return {
 		end,
 		opts = function(_, opts)
 			local prompts = require("prompts.style-guide")
-			local git_workflows = require("workflows.gitcommit")
+			local git_workflows = require("prompts.gitcommit")
 			local workflows = {
 				["Translate Buffer JP -> EN"] = require("workflows.buffer-translator").workflow("Japanese", "English"),
 				["Translate Buffer EN -> JP"] = require("workflows.buffer-translator").workflow("English", "Japanese"),
