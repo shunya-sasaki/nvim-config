@@ -3,6 +3,36 @@ return {
 		"mfussenegger/nvim-dap",
 		config = function()
 			local dap = require("dap")
+			local sign = vim.fn.sign_define
+
+			-- Regular breakpoint
+			sign("DapBreakpoint", {
+				text = "●",
+				texthl = "DapBreakpoint",
+				linehl = "",
+				numhl = "",
+			})
+			vim.api.nvim_set_hl(0, "DapBreakpoint", { fg = "#e06c75", bold = true })
+			-- Conditional breakpoint
+			sign("DapBreakpointCondition", {
+				text = "◆",
+				texthl = "DapBreakpointCondition",
+			})
+			vim.api.nvim_set_hl(0, "DapBreakpointCondition", { fg = "#c678dd", bold = true })
+			-- Breakpoint rejected by adapter
+			sign("DapBreakpointRejected", {
+				text = "",
+				texthl = "DiagnosticError", -- reuse existing highlight if you like
+			})
+			vim.api.nvim_set_hl(0, "DapBreakPointRejected", { fg = "#be5046", bold = true })
+			-- Current execution point: ► in green
+			sign("DapStopped", {
+				text = "▶",
+				texthl = "DapStopped",
+				linehl = "CursorLine", -- optionally shade the whole line
+			})
+			vim.api.nvim_set_hl(0, "DapStopped", { fg = "#98c379", bold = true })
+			-- C++ configuration
 			dap.adapters.codelldb = {
 				type = "executable",
 				command = vim.fn.stdpath("data") .. "/mason/packages/codelldb/extension/adapter/codelldb",
