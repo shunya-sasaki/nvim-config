@@ -4,10 +4,9 @@ return {
 		config = function()
 			local dap = require("dap")
 			local sign = vim.fn.sign_define
-
 			-- Regular breakpoint
 			sign("DapBreakpoint", {
-				text = "●",
+				text = "",
 				texthl = "DapBreakpoint",
 				linehl = "",
 				numhl = "",
@@ -15,21 +14,22 @@ return {
 			vim.api.nvim_set_hl(0, "DapBreakpoint", { fg = "#e06c75", bold = true })
 			-- Conditional breakpoint
 			sign("DapBreakpointCondition", {
-				text = "◆",
+				text = "",
+				texthl = "DapBreakpoint",
 				texthl = "DapBreakpointCondition",
 			})
 			vim.api.nvim_set_hl(0, "DapBreakpointCondition", { fg = "#c678dd", bold = true })
 			-- Breakpoint rejected by adapter
 			sign("DapBreakpointRejected", {
-				text = "",
+				text = "",
 				texthl = "DiagnosticError", -- reuse existing highlight if you like
 			})
 			vim.api.nvim_set_hl(0, "DapBreakPointRejected", { fg = "#be5046", bold = true })
-			-- Current execution point: ► in green
+			-- Current execution point
 			sign("DapStopped", {
-				text = "▶",
+				text = "",
 				texthl = "DapStopped",
-				linehl = "CursorLine", -- optionally shade the whole line
+				linehl = "CursorLine",
 			})
 			vim.api.nvim_set_hl(0, "DapStopped", { fg = "#98c379", bold = true })
 			-- C++ configuration
