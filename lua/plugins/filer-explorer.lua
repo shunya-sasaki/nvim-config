@@ -2,20 +2,20 @@ local dependencies = {
 	"nvim-lua/plenary.nvim",
 	"nvim-tree/nvim-web-devicons",
 	"MunifTanjim/nui.nvim",
+	"folke/snacks.nvim",
 }
-if (vim.fn.has("win32") == 0) and (vim.fn.has("win64") == 0) then
-	table.insert(dependencies, "3rd/image.nvim")
-end
-
 return {
 	"nvim-neo-tree/neo-tree.nvim",
 	branch = "v3.x",
 	dependencies = dependencies,
-	laxy = false,
-	opts = function(opts, _)
+	lazy = false,
+	opts = function(_, opts)
 		opts.window = {
 			mappings = {
-				["P"] = { "toggle_preview", config = { use_float = false, use_image_nvim = true } },
+				["P"] = {
+					"toggle_preview",
+					config = { use_float = false, use_snacks_image = true, use_image_nvim = false },
+				},
 				["l"] = "focus_preview",
 				["<C-b>"] = { "scroll_preview", config = { direction = 10 } },
 				["<C-f>"] = { "scroll_preview", config = { direction = -10 } },
