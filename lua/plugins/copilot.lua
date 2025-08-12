@@ -10,6 +10,7 @@ return {
 			panel = {
 				enabled = false,
 			},
+			copilot_model = "gpt-5",
 		},
 		config = function(_, opts)
 			require("copilot").setup(opts)
@@ -201,7 +202,7 @@ return {
 				chat = {
 					adapter = {
 						name = "copilot",
-						model = "gpt-4.1",
+						model = "gpt-5",
 					},
 					keymaps = {
 						send = {
@@ -229,13 +230,13 @@ return {
 				inline = {
 					adapter = {
 						name = "copilot",
-						model = "gpt-4.1",
+						model = "gpt-5",
 					},
 				},
 				cmd = {
 					adapter = {
 						name = "copilot",
-						model = "gpt-4.1",
+						model = "gpt-5",
 					},
 				},
 			}
