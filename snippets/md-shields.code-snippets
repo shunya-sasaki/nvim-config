@@ -1,17 +1,29 @@
 {
-  "Shields.io Static Badge": {
-    "prefix": "md-shields-static",
-    "scope": "markdown",
-    "description": [
-      "Insert a static badge from Shields.io.",
-      "badgeName: The name of the badge and right side text.",
-      "rightBgColor: The background color of the right side of the badge.",
-      "logo: The logo to use for the badge.",
-      "leftBgColor: The background color of the left side of the badge.",
-      "logoColor: The color of the logo."
-    ],
-    "body": [
-      "![${1:badgeName}](https://img.shields.io/badge/${1:badgeName}-${2:gray}?logo=${1:badgeName}&labelColor=${3:gray}&logoColor=${4:white})"
-    ]
-  }
+	"Shields.io Static Badge": {
+		"prefix": "md-shields-static",
+		"scope": "markdown",
+		"description": [
+			"Insert a static badge from Shields.io.",
+			"badgeName: The name of the badge and right side text.",
+			"rightBgColor: The background color of the right side of the badge.",
+			"logo: The logo to use for the badge.",
+			"leftBgColor: The background color of the left side of the badge.",
+			"logoColor: The color of the logo."
+		],
+		"body": [
+			"![${1:badgeName}](https://img.shields.io/badge/${1:badgeName}-${2:gray}?logo=${1:badgeName}&labelColor=${3:gray}&logoColor=${4:white})"
+		]
+	},
+	"Shields.io GitHub License": {
+		"prefix": "md-shields-license",
+		"scope": "markdown",
+		"description": [
+			"Insert a license badge from Shields.io.",
+			"user: The GitHub username.",
+			"repo: The repository name."
+		],
+		"body": [
+			"![${1:badgeName}](https://img.shields.io/github/license/${1:user}/${2:repo})"
+		]
+	}
 }
