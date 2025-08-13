@@ -20,6 +20,7 @@ return {
 					"gitignore",
 					"html",
 					"htmldjango",
+					"http",
 					"ini",
 					"javascript",
 					"jsdoc",
