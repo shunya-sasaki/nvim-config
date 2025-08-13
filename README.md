@@ -1,5 +1,8 @@
 # Nvim Config
 
+![neovim](https://img.shields.io/badge/neovim-brand?logo=neovim&labelColor=gray&logoColor=white)
+![mit](https://img.shields.io/github/license/shunya-sasaki/nvim-config)
+
 Configuration files for Neovim.
 
 - [Required](#required)
@@ -189,4 +192,4 @@ return {
 
 ## License
 
-[MIT](./LICENSE)
+[MIT License](./LICENSE)
