@@ -126,12 +126,22 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 		"*.jsx",
 	},
 	callback = function()
-		if vim.bo.filetype == "python" then
+		local organize_kinds = {
+			python = "source.organizeImports.ruff",
+			javascript = "source.organizeImports",
+			javascriptreact = "source.organizeImports",
+			typescript = "source.organizeImports",
+			typescriptreact = "source.organizeImports",
+		}
+		local ft = vim.bo.filetype
+		local kinds = organize_kinds[ft]
+		if kinds then
 			vim.lsp.buf.code_action({
 				context = {
-					only = { "source.organizeImports.ruff" },
+					only = { kinds },
 				},
 				apply = true,
+				async = false,
 			})
 		end
 		vim.lsp.buf.format({ async = false })
@@ -147,6 +157,7 @@ vim.api.nvim_create_autocmd("FileType", {
 		"lua",
 		"javascript",
 		"typescript",
+		"typescriptreact",
 		"html",
 		"css",
 		"json",
