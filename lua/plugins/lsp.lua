@@ -32,6 +32,7 @@ return {
 				"tailwindcss",
 				"cssls",
 				"marksman",
+				"html",
 				"powershell_es",
 				"nginx_language_server",
 			}

@@ -124,6 +124,8 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 		"*.tsx",
 		"*.js",
 		"*.jsx",
+		"*.html",
+		"*.css",
 	},
 	callback = function()
 		local organize_kinds = {

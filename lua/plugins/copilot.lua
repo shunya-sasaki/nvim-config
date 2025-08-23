@@ -85,6 +85,7 @@ return {
 			vim.cmd([[cab ca CodeCompanionActions]])
 		end,
 		opts = function(_, opts)
+			local copilot_model = "gpt-4.1"
 			local prompts = require("prompts.style-guide")
 			local git_workflows = require("prompts.gitcommit")
 			local workflows = {
@@ -202,7 +203,7 @@ return {
 				chat = {
 					adapter = {
 						name = "copilot",
-						model = "gpt-5",
+						model = copilot_model,
 					},
 					keymaps = {
 						send = {
@@ -222,7 +223,7 @@ return {
 					},
 					roles = {
 						llm = function(adapter)
-							return "  (" .. adapter.formatted_name .. ")"
+							return "  (" .. adapter.formatted_name .. ")"
 						end,
 						user = "  Me",
 					},
@@ -230,13 +231,13 @@ return {
 				inline = {
 					adapter = {
 						name = "copilot",
-						model = "gpt-5",
+						model = copilot_model,
 					},
 				},
 				cmd = {
 					adapter = {
 						name = "copilot",
-						model = "gpt-5",
+						model = copilot_model,
 					},
 				},
 			}
