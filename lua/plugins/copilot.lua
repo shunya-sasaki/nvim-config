@@ -10,8 +10,9 @@ return {
 			panel = {
 				enabled = false,
 			},
-			copilot_model = "gpt-5",
+			copilot_model = "gpt-41-copilot",
 		},
+		copilot_node_command = "node",
 		config = function(_, opts)
 			require("copilot").setup(opts)
 		end,
@@ -85,7 +86,7 @@ return {
 			vim.cmd([[cab ca CodeCompanionActions]])
 		end,
 		opts = function(_, opts)
-			local copilot_model = "gpt-4.1"
+			local copilot_model = "gpt-5"
 			local prompts = require("prompts.style-guide")
 			local git_workflows = require("prompts.gitcommit")
 			local workflows = {
@@ -163,41 +164,43 @@ return {
 				end,
 			}
 			opts.adapters = {
-				gemini = function()
-					return require("codecompanion.adapters").extend("gemini", {
-						env = {
-							api_key = os.getenv("GEMINI_API_KEY"),
-						},
-						schema = {
-							model = {
-								default = "gemini-2.5-pro",
+				http = {
+					gemini = function()
+						return require("codecompanion.adapters").extend("gemini", {
+							env = {
+								api_key = os.getenv("GEMINI_API_KEY"),
 							},
-						},
-					})
-				end,
-				llama3 = function()
-					return require("codecompanion.adapters").extend("ollama", {
-						name = "llama3.2",
-						schema = {
-							model = {
-								default = "llama3.2:latest",
+							schema = {
+								model = {
+									default = "gemini-2.5-pro",
+								},
 							},
-						},
-					})
-				end,
-				azure_openai = function()
-					return require("codecompanion.adapters").extend("azure_openai", {
-						env = {
-							api_key = os.getenv("AZURE_OPENAI_API_KEY"),
-							api_base = os.getenv("AZURE_OPENAI_ENDPOINT"),
-						},
-						schema = {
-							model = {
-								default = os.getenv("AZURE_OPENAI_MODEL"),
+						})
+					end,
+					llama3 = function()
+						return require("codecompanion.adapters").extend("ollama", {
+							name = "llama3.2",
+							schema = {
+								model = {
+									default = "llama3.2:latest",
+								},
 							},
-						},
-					})
-				end,
+						})
+					end,
+					azure_openai = function()
+						return require("codecompanion.adapters").extend("azure_openai", {
+							env = {
+								api_key = os.getenv("AZURE_OPENAI_API_KEY"),
+								api_base = os.getenv("AZURE_OPENAI_ENDPOINT"),
+							},
+							schema = {
+								model = {
+									default = os.getenv("AZURE_OPENAI_MODEL"),
+								},
+							},
+						})
+					end,
+				},
 			}
 			opts.strategies = {
 				chat = {
