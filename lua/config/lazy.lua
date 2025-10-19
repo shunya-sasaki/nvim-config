@@ -32,8 +32,9 @@ if has_local then
 end
 
 require("lazy").setup({
+	checker = { enabled = false },
 	spec = specs,
 	rocks = { hererocks = true },
 	install = { colorscheme = { "tokyonight" } },
-	checker = { enabled = true },
+	checker = { enabled = false },
 })
