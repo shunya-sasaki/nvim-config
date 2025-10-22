@@ -47,6 +47,7 @@ return {
 			vim.lsp.enable("tailwindcss")
 			vim.lsp.enable("marksman")
 			vim.lsp.enable("powershell_es")
+			vim.lsp.enable("ruff")
 		end,
 	},
 	{

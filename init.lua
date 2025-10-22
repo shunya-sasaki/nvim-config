@@ -129,11 +129,11 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 	},
 	callback = function()
 		local organize_kinds = {
-			python = "source.organizeImports.ruff",
-			javascript = "source.organizeImports",
-			javascriptreact = "source.organizeImports",
-			typescript = "source.organizeImports",
-			typescriptreact = "source.organizeImports",
+			python = "source.organizeImports",
+			-- javascript = "source.organizeImports",
+			-- javascriptreact = "source.organizeImports",
+			-- typescript = "source.organizeImports",
+			-- typescriptreact = "source.organizeImports",
 		}
 		local ft = vim.bo.filetype
 		local kinds = organize_kinds[ft]
